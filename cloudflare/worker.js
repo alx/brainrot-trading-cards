@@ -4,7 +4,7 @@ const GH_ORIGIN   = 'https://alx.github.io/brainrot-trading-cards';
 
 // Mirrors DEFAULTS in index.html
 const DEFAULTS = {
-  action: 'IM TRADING', lq: '1', ln: 'noobini-santanini',
+  action: 'IM TRADING', lq: '1', ln: 'noobini-pizzanini',
   lc: 'gold', lbg: 'green', ls: '',
   rq: '1', rn: 'Strawberryelephant-1',
   rc: 'rainbow', rbg: 'orange',
