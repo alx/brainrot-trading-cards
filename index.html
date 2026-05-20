@@ -642,7 +642,16 @@ function writeParams(state, replace = true) {
 }
 
 function shareUrl() {
-  return location.href;
+  const u = new URL(location.href);
+  for (const k of Object.keys(DEFAULTS)) {
+    const v = state[k];
+    if (v !== '' && v != null) {
+      u.searchParams.set(k, v);
+    } else {
+      u.searchParams.delete(k);
+    }
+  }
+  return u.toString();
 }
 
 /* ──────────────────────────────────────────────────────────────────
