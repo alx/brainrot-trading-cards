@@ -2,17 +2,44 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JE636RDK62"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JE636RDK62');
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Brainrot Trading Card</title>
 
 <!-- OG meta tags (rewritten at runtime from URL params) -->
-<meta property="og:type" content="website" />
-<meta property="og:title" id="og-title" content="I'M TRADING" />
-<meta property="og:description" id="og-desc" content="A brainrot trade offer" />
-<meta property="og:image" id="og-image" content="" />
-<meta property="og:image:width" content="1200" />
+<meta property="og:type"        content="website" />
+<meta property="og:site_name"   content="Brainrot Trading Cards" />
+<meta property="og:url"         id="og-url"       content="https://alx.github.io/brainrot-trading-cards/" />
+<meta property="og:title"       id="og-title"     content="I'M TRADING" />
+<meta property="og:description" id="og-desc"      content="A brainrot trade offer" />
+<meta property="og:image"       id="og-image"
+  content="https://brainrot-og.girard-davila.net/render?u=https%3A%2F%2Falx.github.io%2Fbrainrot-trading-cards%2F" />
+<meta property="og:image:type"   content="image/png" />
+<meta property="og:image:width"  content="1200" />
 <meta property="og:image:height" content="800" />
-<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image:alt"   id="og-image-alt" content="A brainrot trading card" />
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       id="tw-title"    content="I'M TRADING" />
+<meta name="twitter:description" id="tw-desc"     content="A brainrot trade offer" />
+<meta name="twitter:image"       id="tw-image"
+  content="https://brainrot-og.girard-davila.net/render?u=https%3A%2F%2Falx.github.io%2Fbrainrot-trading-cards%2F" />
+<meta name="twitter:image:alt"  id="tw-image-alt" content="A brainrot trading card" />
+<script>
+(function(){
+  var img = 'https://brainrot-og.girard-davila.net/render?u=' + encodeURIComponent(location.href);
+  function set(id, val) { var el = document.getElementById(id); if (el) el.setAttribute('content', val); }
+  set('og-url',   location.href);
+  set('og-image', img);
+  set('tw-image', img);
+})();
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1023,7 +1050,7 @@ function render(state) {
         </div>
       </div>
 
-      <div class="watermark">alx.github.io/brainrot-trading-cards/</div>
+      <div class="watermark">brainrot.girard-davila.net</div>
     </div>
   `;
   fitCard();
@@ -1129,13 +1156,22 @@ function updateShareBox() {
 function updateOG() {
   const lName = brainrotById(state.ln).name;
   const rName = brainrotById(state.rn).name;
-  document.title = `${state.action} — ${state.lq} ${lName} → ${state.rq} ${rName}`;
-  document.getElementById('og-title').setAttribute('content', `${state.action}: ${state.lq} ${lName}`);
+  const title = `${state.action}: ${state.lq} ${lName} → ${state.rq} ${rName}`;
   const subClean = (s) => (s || '').replace(/\{[^:]+:([^}]+)\}/g, '$1').replace(/\n/g, ' ');
-  document.getElementById('og-desc').setAttribute('content',
-    `For: ${state.rq} ${rName}${state.rs ? '. ' + subClean(state.rs) : ''}`);
-  const renderer = `https://og.brainrot.card/render?u=${encodeURIComponent(location.href)}`;
-  document.getElementById('og-image').setAttribute('content', renderer);
+  const desc = `For: ${state.rq} ${rName}${state.rs ? '. ' + subClean(state.rs) : ''}`;
+  const img = `https://brainrot-og.girard-davila.net/render?u=${encodeURIComponent(location.href)}`;
+  const alt = `${state.lq} ${lName} for ${state.rq} ${rName} trading card`;
+  document.title = `${state.action} — ${state.lq} ${lName} → ${state.rq} ${rName}`;
+  const set = (id, val) => { const el = document.getElementById(id); if (el) el.setAttribute('content', val); };
+  set('og-url',       location.href);
+  set('og-title',     title);
+  set('og-desc',      desc);
+  set('og-image',     img);
+  set('og-image-alt', alt);
+  set('tw-title',     title);
+  set('tw-desc',      desc);
+  set('tw-image',     img);
+  set('tw-image-alt', alt);
 }
 
 function toast(msg) {
