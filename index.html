@@ -1138,67 +1138,28 @@ function toast(msg) {
 async function downloadPNG() {
   toast('Rendering…');
   const card = document.getElementById('card');
-  const W = 1200, H = 800, SCALE = 2;
 
   const prevTransform = card.style.transform;
-  card.style.transform = 'scale(1)';
+  card.style.transform = 'none';
 
   try {
-    if (!window.html2canvas) {
+    if (!window.domtoimage) {
       await new Promise((res, rej) => {
         const s = document.createElement('script');
-        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js';
         s.onload = res; s.onerror = rej;
         document.head.appendChild(s);
       });
     }
 
-    // Read computed background before clone so it's available inside onclone closure
-    const computedBg = getComputedStyle(card).background;
-
-    const canvas = await html2canvas(card, {
-      backgroundColor: null,
-      scale: SCALE,
-      useCORS: true,
-      logging: false,
-      onclone: (_doc, el) => {
-        // Set background inline — html2canvas reliably captures inline styles;
-        // the CSS-class radial-gradient can be missed when backgroundColor is null
-        el.style.background = computedBg;
-        // Hide rays: repeating-conic-gradient is unsupported by html2canvas;
-        // we redraw them manually below
-        const rays = el.querySelector('.rays');
-        if (rays) rays.style.display = 'none';
-      }
-    });
-
-    // Draw sun-ray wedges on the captured canvas to restore the rays overlay effect
-    // (approximates: repeating-conic-gradient + mix-blend-mode: overlay)
-    const ctx = canvas.getContext('2d');
-    const cx = (W * SCALE) / 2, cy = (H * SCALE) / 2;
-    const rLen = Math.hypot(W * SCALE, H * SCALE);
-    ctx.save();
-    ctx.globalCompositeOperation = 'overlay';
-    ctx.globalAlpha = 0.08;
-    ctx.fillStyle = 'white';
-    for (let deg = 0; deg < 360; deg += 20) {
-      const a0 = (deg - 90) * Math.PI / 180;
-      const a1 = (deg + 10 - 90) * Math.PI / 180;
-      ctx.beginPath();
-      ctx.moveTo(cx, cy);
-      ctx.arc(cx, cy, rLen, a0, a1);
-      ctx.closePath();
-      ctx.fill();
-    }
-    ctx.restore();
-
-    canvas.toBlob(blob => {
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `trade-${(state.ln||'card').toLowerCase()}-${Date.now()}.png`;
-      a.click();
-      toast('Downloaded!');
-    });
+    // dom-to-image renders via SVG foreignObject so the browser's native CSS
+    // engine handles all features (conic-gradient, mix-blend-mode, etc.)
+    const blob = await domtoimage.toBlob(card, { width: 1200, height: 800 });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `trade-${(state.ln||'card').toLowerCase()}-${Date.now()}.png`;
+    a.click();
+    toast('Downloaded!');
   } catch (e) {
     console.error(e);
     toast('Download failed');
