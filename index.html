@@ -40,6 +40,13 @@
 
   body { padding-bottom: 24px; }
 
+  .page-col {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
   /* ── Page chrome ─────────────────────────────────────────────────── */
   .stage {
     display: flex;
@@ -50,8 +57,6 @@
 
   /* ── Editor panel (now full-width, below the card) ─────────────────────── */
   .editor {
-    max-width: 1200px;
-    margin: 0 auto;
     background: rgba(34, 25, 21, 0.96);
     border: 2px solid #3a2a20;
     border-radius: 12px;
@@ -59,8 +64,7 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
   .editor-header {
-    max-width: 1200px;
-    margin: 16px auto 8px;
+    margin: 16px 0 8px;
     padding: 0 4px;
   }
   .editor-header h2 {
@@ -471,9 +475,10 @@
 </style>
 </head>
 <body>
+<div class="page-col">
 
 <header class="editor-header">
-  <h2>✦ BRAINROT TRADING CARD</h2>
+  <h2>BRAINROT TRADING CARD</h2>
   <div class="editor-top">
     <div class="field">
       <label>Card background</label>
@@ -1031,7 +1036,7 @@ function fitCard() {
   if (!card || !wrap) return;
   const header = document.querySelector('.editor-header');
   const headerH = header ? header.getBoundingClientRect().height : 120;
-  const sw = window.innerWidth - 48;
+  const sw = Math.min(850, window.innerWidth) - 48;
   const sh = Math.max(window.innerHeight - headerH - 60, 400);
   const cw = 1200, ch = 800;
   const scale = Math.min(sw / cw, sh / ch, 1);
@@ -1235,5 +1240,6 @@ async function downloadPNG() {
 })();
 </script>
 
+</div><!-- /.page-col -->
 </body>
 </html>
