@@ -17,8 +17,8 @@
 <meta property="og:type"        content="website" />
 <meta property="og:site_name"   content="Brainrot Trading Cards" />
 <meta property="og:url"         id="og-url"       content="https://brainrot.girard-davila.net/" />
-<meta property="og:title"       id="og-title"     content="I'M TRADING" />
-<meta property="og:description" id="og-desc"      content="A brainrot trade offer" />
+<meta property="og:title"       id="og-title"     content="Brainrot Trading Cards — Make a Trade!" />
+<meta property="og:description" id="og-desc"      content="Build your trade offer with brainrot characters and share it with friends. Pick your cards, set your terms, and trade!" />
 <meta property="og:image"       id="og-image"
   content="https://brainrot-og.girard-davila.net/render?u=https%3A%2F%2Fbrainrot.girard-davila.net%2F" />
 <meta property="og:image:type"   content="image/png" />
@@ -1156,12 +1156,26 @@ function updateShareBox() {
 function updateOG() {
   const lName = brainrotById(state.ln).name;
   const rName = brainrotById(state.rn).name;
-  const title = `${state.action}: ${state.lq} ${lName} → ${state.rq} ${rName}`;
-  const subClean = (s) => (s || '').replace(/\{[^:]+:([^}]+)\}/g, '$1').replace(/\n/g, ' ');
-  const desc = `For: ${state.rq} ${rName}${state.rs ? '. ' + subClean(state.rs) : ''}`;
+  const subClean = (s) => (s || '').replace(/\{[^:]+:([^}]+)\}/g, '$1').replace(/\n/g, ' ').trim();
+
+  // Title: optimal 50-60 chars
+  let title = `${state.action}: ${state.lq}x ${lName} → ${state.rq}x ${rName}`;
+  if (title.length > 60) title = title.slice(0, 57) + '…';
+
+  // Description: optimal 110-160 chars
+  const rsClean = subClean(state.rs);
+  const base = `Offering ${state.lq}x ${lName} in exchange for ${state.rq}x ${rName}.`;
+  const suffix = ' Trade on Brainrot Trading Cards!';
+  const mid = rsClean ? ` ${rsClean}.` : '';
+  let desc = base + mid + suffix;
+  if (desc.length > 160) {
+    const budget = 160 - base.length - suffix.length - 2;
+    desc = base + (budget > 0 ? ' ' + rsClean.slice(0, budget) + '…' : '') + suffix;
+  }
+
   const img = `https://brainrot-og.girard-davila.net/render?u=${encodeURIComponent(location.href)}`;
-  const alt = `${state.lq} ${lName} for ${state.rq} ${rName} trading card`;
-  document.title = `${state.action} — ${state.lq} ${lName} → ${state.rq} ${rName}`;
+  const alt = `${state.lq}x ${lName} for ${state.rq}x ${rName} trading card`;
+  document.title = `${state.action} — ${state.lq}x ${lName} → ${state.rq}x ${rName}`;
   const set = (id, val) => { const el = document.getElementById(id); if (el) el.setAttribute('content', val); };
   set('og-url',       location.href);
   set('og-title',     title);
