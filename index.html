@@ -1142,6 +1142,47 @@ function toast(msg) {
 }
 
 /* ──────────────────────────────────────────────────────────────────
+   Font embedding — dom-to-image cannot read cross-origin <link>
+   stylesheets, so Google Fonts fall back to system fonts in the PNG.
+   We fetch the font CSS + binaries and inject them as an inline
+   <style> with base64 data URIs that dom-to-image CAN access.
+   ────────────────────────────────────────────────────────────────── */
+function _arrayBufToBase64(buf) {
+  let bin = '';
+  const bytes = new Uint8Array(buf);
+  for (let i = 0; i < bytes.length; i += 8192) {
+    bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
+  }
+  return btoa(bin);
+}
+
+async function embedGoogleFonts() {
+  if (document.getElementById('embedded-fonts')) return;
+  try {
+    const cssUrl = 'https://fonts.googleapis.com/css2?family=Lilita+One&family=Press+Start+2P&family=Bungee&display=swap';
+    const cssResp = await fetch(cssUrl);
+    let css = await cssResp.text();
+
+    // Replace each font URL with a base64 data URI
+    const matches = [...css.matchAll(/url\((https:\/\/fonts\.gstatic\.com[^)]+)\)/g)];
+    await Promise.all(matches.map(async ([, url]) => {
+      const fontResp = await fetch(url);
+      const buf = await fontResp.arrayBuffer();
+      const b64 = _arrayBufToBase64(buf);
+      const fmt = url.includes('.woff2') ? 'woff2' : 'woff';
+      css = css.replaceAll(url, `data:font/${fmt};base64,${b64}`);
+    }));
+
+    const style = document.createElement('style');
+    style.id = 'embedded-fonts';
+    style.textContent = css;
+    document.head.appendChild(style);
+  } catch (e) {
+    console.warn('Font embedding failed — PNG may use fallback fonts', e);
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────────
    Download as PNG (client-side rasterization)
    ────────────────────────────────────────────────────────────────── */
 async function downloadPNG() {
@@ -1161,8 +1202,9 @@ async function downloadPNG() {
       });
     }
 
-    // dom-to-image renders via SVG foreignObject so the browser's native CSS
-    // engine handles all features (conic-gradient, mix-blend-mode, etc.)
+    // Embed fonts as base64 so dom-to-image can access @font-face rules
+    await embedGoogleFonts();
+
     const blob = await domtoimage.toBlob(card, { width: 1200, height: 800 });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
