@@ -1,0 +1,7 @@
+name               = "brainrot-og-worker"
+main               = "worker.js"
+compatibility_date = "2024-01-01"
+
+routes = [
+  { pattern = "brainrot.girard-davila.net/*", zone_name = "girard-davila.net" }
+]
