@@ -1,0 +1,2230 @@
+{
+  "_comment": "Brainrot catalog. Drop matching .webp files in this folder. id = filename (without extension).",
+  "brainrots": [
+    {
+      "id": "1x1x1x1t",
+      "name": "1x1x1x1t",
+      "wiki_valid": false
+    },
+    {
+      "id": "25",
+      "name": "25",
+      "wiki_valid": true
+    },
+    {
+      "id": "A_Flying_Alligator",
+      "name": "A Flying Alligator",
+      "wiki_valid": false
+    },
+    {
+      "id": "Abyssaloco",
+      "name": "Abyssaloco",
+      "wiki_valid": true
+    },
+    {
+      "id": "Agarrini_La_Palini",
+      "name": "Agarrini La Palini",
+      "wiki_valid": false
+    },
+    {
+      "id": "Alessio",
+      "name": "Alessio",
+      "wiki_valid": true
+    },
+    {
+      "id": "Anpali_Babel",
+      "name": "Anpali Babel",
+      "wiki_valid": true
+    },
+    {
+      "id": "Antonio",
+      "name": "Antonio",
+      "wiki_valid": true
+    },
+    {
+      "id": "Appelini",
+      "name": "Appelini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Aquanaut",
+      "name": "Aquanaut",
+      "wiki_valid": true
+    },
+    {
+      "id": "Arcadopus",
+      "name": "Arcadopus",
+      "wiki_valid": true
+    },
+    {
+      "id": "Arcadragon",
+      "name": "Arcadragon",
+      "wiki_valid": true
+    },
+    {
+      "id": "Astrolero_Cervalero",
+      "name": "Astrolero Cervalero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Avocadini_Antilopini",
+      "name": "Avocadini Antilopini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Avocadiniguffo",
+      "name": "Avocadiniguffo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Avocadorilla",
+      "name": "Avocadorilla",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bacuru_And_Egguru",
+      "name": "Bacuru And Egguru",
+      "wiki_valid": false
+    },
+    {
+      "id": "Ballerina_Cappucinaaaa",
+      "name": "Ballerina Cappucinaaaa",
+      "wiki_valid": false
+    },
+    {
+      "id": "Ballerina_Peppermintina",
+      "name": "Ballerina Peppermintina",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ballerinolololo",
+      "name": "Ballerinolololo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Bambini_Crostini",
+      "name": "Bambini Crostini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bambu_Sahur_Full_Rost",
+      "name": "Bambu Sahur Full Rost",
+      "wiki_valid": false
+    },
+    {
+      "id": "Banana",
+      "name": "Banana",
+      "wiki_valid": false
+    },
+    {
+      "id": "Bananito",
+      "name": "Bananito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bananito_Bandito",
+      "name": "Bananito Bandito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bandito_Axolito1",
+      "name": "Bandito Axolito1",
+      "wiki_valid": false
+    },
+    {
+      "id": "Bandito_Bobritto",
+      "name": "Bandito Bobritto",
+      "wiki_valid": true
+    },
+    {
+      "id": "Baskito",
+      "name": "Baskito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bee_Loco",
+      "name": "Bee Loco",
+      "wiki_valid": true
+    },
+    {
+      "id": "Belulaa",
+      "name": "Belulaa",
+      "wiki_valid": false
+    },
+    {
+      "id": "Berenjello_Angello",
+      "name": "Berenjello Angello",
+      "wiki_valid": true
+    },
+    {
+      "id": "Berry_Berry_Bicus_Dickus",
+      "name": "Berry Berry Bicus Dickus",
+      "wiki_valid": false
+    },
+    {
+      "id": "Berryno",
+      "name": "Berryno",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bisonte_Giuppitere_Normal",
+      "name": "Bisonte Giuppitere Normal",
+      "wiki_valid": false
+    },
+    {
+      "id": "Blackhole_Goat",
+      "name": "Blackhole Goat",
+      "wiki_valid": true
+    },
+    {
+      "id": "Boatito_Auratito",
+      "name": "Boatito Auratito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Boba_Panda",
+      "name": "Boba Panda",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bombardini_Tortilii",
+      "name": "Bombardini Tortilii",
+      "wiki_valid": false
+    },
+    {
+      "id": "Bombombini_Gusini",
+      "name": "Bombombini Gusini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Boneca_Ambalabu",
+      "name": "Boneca Ambalabu",
+      "wiki_valid": true
+    },
+    {
+      "id": "Boppin_Bunny",
+      "name": "Boppin Bunny",
+      "wiki_valid": true
+    },
+    {
+      "id": "Brainrot_God_Gambling_Block",
+      "name": "Brainrot God Gambling Block",
+      "wiki_valid": false
+    },
+    {
+      "id": "Brasilini_Berimbini",
+      "name": "Brasilini Berimbini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Brr_Brr_Patapim",
+      "name": "Brr Brr Patapim",
+      "wiki_valid": true
+    },
+    {
+      "id": "Brr_Es_Teh_Patipum",
+      "name": "Brr Es Teh Patipum",
+      "wiki_valid": false
+    },
+    {
+      "id": "Brunito_Marsito",
+      "name": "Brunito Marsito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Brutto_Gialutto",
+      "name": "Brutto Gialutto",
+      "wiki_valid": true
+    },
+    {
+      "id": "Buho_De_Nuelo",
+      "name": "Buho De Nuelo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Buho_De_Volto",
+      "name": "Buho De Volto",
+      "wiki_valid": false
+    },
+    {
+      "id": "Buho_Del_Cielo",
+      "name": "Buho Del Cielo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Buhodefuego",
+      "name": "Buhodefuego",
+      "wiki_valid": false
+    },
+    {
+      "id": "Bulbito_Bandito_Traktorito",
+      "name": "Bulbito Bandito Traktorito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bunito_Bunito_Spinito",
+      "name": "Bunito Bunito Spinito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bunny_And_Eggy",
+      "name": "Bunny And Eggy",
+      "wiki_valid": false
+    },
+    {
+      "id": "Bunny_Bunny_Bunny_Sahur",
+      "name": "Bunny Bunny Bunny Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bunny_Tralala",
+      "name": "Bunny Tralala",
+      "wiki_valid": true
+    },
+    {
+      "id": "Bunnyman",
+      "name": "Bunnyman",
+      "wiki_valid": true
+    },
+    {
+      "id": "Buntteo",
+      "name": "Buntteo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Burbaloni_Loliloli",
+      "name": "Burbaloni Loliloli",
+      "wiki_valid": true
+    },
+    {
+      "id": "Burrito_Bandito",
+      "name": "Burrito Bandito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cacasito_Satalito",
+      "name": "Cacasito Satalito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cacto_Hipopotamo1",
+      "name": "Cacto Hipopotamo1",
+      "wiki_valid": false
+    },
+    {
+      "id": "Camera_Ramena",
+      "name": "Camera Ramena",
+      "wiki_valid": true
+    },
+    {
+      "id": "Capi_Taco",
+      "name": "Capi Taco",
+      "wiki_valid": true
+    },
+    {
+      "id": "Capitano_Moby",
+      "name": "Capitano Moby",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cappuccino_Assassino",
+      "name": "Cappuccino Assassino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cappuccinoclown",
+      "name": "Cappuccinoclown",
+      "wiki_valid": false
+    },
+    {
+      "id": "Caramello_Filtrello2",
+      "name": "Caramello Filtrello2",
+      "wiki_valid": false
+    },
+    {
+      "id": "Carrotini_Brainini",
+      "name": "Carrotini Brainini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Casa_Booo",
+      "name": "Casa Booo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Cash_Or_Card",
+      "name": "Cash Or Card",
+      "wiki_valid": false
+    },
+    {
+      "id": "Cavallo_Virtuoso",
+      "name": "Cavallo Virtuoso",
+      "wiki_valid": true
+    },
+    {
+      "id": "Celestial_Pegasus",
+      "name": "Celestial Pegasus",
+      "wiki_valid": true
+    },
+    {
+      "id": "Celular",
+      "name": "Celular",
+      "wiki_valid": false
+    },
+    {
+      "id": "Centrucci_Nuclucci",
+      "name": "Centrucci Nuclucci",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cerberus",
+      "name": "Cerberus",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chachechi",
+      "name": "Chachechi",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chef_Crabracadabra",
+      "name": "Chef Crabracadabra",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chicleteira_Bicicleteira",
+      "name": "Chicleteira Bicicleteira",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chicleteira_Cupideira",
+      "name": "Chicleteira Cupideira",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chicleteirina_Bicicleteirina",
+      "name": "Chicleteirina Bicicleteirina",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chihuanini_Taconini",
+      "name": "Chihuanini Taconini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chilin",
+      "name": "Chilin",
+      "wiki_valid": false
+    },
+    {
+      "id": "Chill_Puppy",
+      "name": "Chill Puppy",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chimnino",
+      "name": "Chimnino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chimpanzee_Spider",
+      "name": "Chimpanzee Spider",
+      "wiki_valid": false
+    },
+    {
+      "id": "Chimpanzinibananini",
+      "name": "Chimpanzinibananini",
+      "wiki_valid": false
+    },
+    {
+      "id": "Chipsoqueso",
+      "name": "Chipsoqueso",
+      "wiki_valid": false
+    },
+    {
+      "id": "Chocco_Bunny",
+      "name": "Chocco Bunny",
+      "wiki_valid": true
+    },
+    {
+      "id": "Chrismasmamat",
+      "name": "Chrismasmamat",
+      "wiki_valid": true
+    },
+    {
+      "id": "Churrito_Bunnito",
+      "name": "Churrito Bunnito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cigno_Fulgoro",
+      "name": "Cigno Fulgoro",
+      "wiki_valid": true
+    },
+    {
+      "id": "Clear_Background_Clear_Meowl_Image",
+      "name": "Clear Background Clear Meowl Image",
+      "wiki_valid": false
+    },
+    {
+      "id": "Clickerino_Crabo",
+      "name": "Clickerino Crabo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cloverat_Clapat",
+      "name": "Cloverat Clapat",
+      "wiki_valid": true
+    },
+    {
+      "id": "Clovkur_Kurkur",
+      "name": "Clovkur Kurkur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cocoa_Assassino",
+      "name": "Cocoa Assassino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cocofanto",
+      "name": "Cocofanto",
+      "wiki_valid": false
+    },
+    {
+      "id": "Cocosini_Mama",
+      "name": "Cocosini Mama",
+      "wiki_valid": true
+    },
+    {
+      "id": "Coffin_Tung_Tung",
+      "name": "Coffin Tung Tung",
+      "wiki_valid": false
+    },
+    {
+      "id": "Cooki_And_Milki",
+      "name": "Cooki And Milki",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cornsahur",
+      "name": "Cornsahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "Crabo_Limonetta",
+      "name": "Crabo Limonetta",
+      "wiki_valid": false
+    },
+    {
+      "id": "Cuadramat",
+      "name": "Cuadramat",
+      "wiki_valid": false
+    },
+    {
+      "id": "Cupcake_Koala",
+      "name": "Cupcake Koala",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cupid_Cupid_Sahur",
+      "name": "Cupid Cupid Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Cupid_Hotspot",
+      "name": "Cupid Hotspot",
+      "wiki_valid": true
+    },
+    {
+      "id": "Digi_Narwhal",
+      "name": "Digi Narwhal",
+      "wiki_valid": true
+    },
+    {
+      "id": "Divino_Platypio",
+      "name": "Divino Platypio",
+      "wiki_valid": true
+    },
+    {
+      "id": "Dj_Panda",
+      "name": "Dj Panda",
+      "wiki_valid": false
+    },
+    {
+      "id": "Doidoi",
+      "name": "Doidoi",
+      "wiki_valid": false
+    },
+    {
+      "id": "Dolphin_But_Banana",
+      "name": "Dolphin But Banana",
+      "wiki_valid": false
+    },
+    {
+      "id": "Dolphini_Jetskini",
+      "name": "Dolphini Jetskini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Donkeyturbo_Express",
+      "name": "Donkeyturbo Express",
+      "wiki_valid": true
+    },
+    {
+      "id": "Dragon_Canneloni",
+      "name": "Dragon Canneloni",
+      "wiki_valid": false
+    },
+    {
+      "id": "Dragongingerini",
+      "name": "Dragongingerini",
+      "wiki_valid": false
+    },
+    {
+      "id": "Dug_Dug_Dug_Brainrot",
+      "name": "Dug Dug Dug Brainrot",
+      "wiki_valid": false
+    },
+    {
+      "id": "Duggy_Bros",
+      "name": "Duggy Bros",
+      "wiki_valid": true
+    },
+    {
+      "id": "Dul_Dul_Dul",
+      "name": "Dul Dul Dul",
+      "wiki_valid": true
+    },
+    {
+      "id": "Dumborino_Miracello",
+      "name": "Dumborino Miracello",
+      "wiki_valid": true
+    },
+    {
+      "id": "Easter_Easter_Easter_Sahur",
+      "name": "Easter Easter Easter Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Eggdin_Egg_Egg_Dun",
+      "name": "Eggdin Egg Egg Dun",
+      "wiki_valid": true
+    },
+    {
+      "id": "Eid_Eid_Eid_Sahur",
+      "name": "Eid Eid Eid Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Electro_Quacko",
+      "name": "Electro Quacko",
+      "wiki_valid": true
+    },
+    {
+      "id": "Elefanto_Frigo_Transparent",
+      "name": "Elefanto Frigo Transparent",
+      "wiki_valid": false
+    },
+    {
+      "id": "Esoksekolah2",
+      "name": "Esoksekolah2",
+      "wiki_valid": false
+    },
+    {
+      "id": "Espresso_Signora",
+      "name": "Espresso Signora",
+      "wiki_valid": true
+    },
+    {
+      "id": "Eviledonn",
+      "name": "Eviledonn",
+      "wiki_valid": false
+    },
+    {
+      "id": "Extinct_Ballerina",
+      "name": "Extinct Ballerina",
+      "wiki_valid": true
+    },
+    {
+      "id": "Extinct_Matteo",
+      "name": "Extinct Matteo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Extinct_Tralalero",
+      "name": "Extinct Tralalero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Festive_67_Brainrot",
+      "name": "Festive 67 Brainrot",
+      "wiki_valid": false
+    },
+    {
+      "id": "Fishboard",
+      "name": "Fishboard",
+      "wiki_valid": true
+    },
+    {
+      "id": "Fishino_Clownino",
+      "name": "Fishino Clownino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Fizzy_Soda",
+      "name": "Fizzy Soda",
+      "wiki_valid": true
+    },
+    {
+      "id": "Flancito",
+      "name": "Flancito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Flipa_Sandala",
+      "name": "Flipa Sandala",
+      "wiki_valid": true
+    },
+    {
+      "id": "Fluriflura",
+      "name": "Fluriflura",
+      "wiki_valid": true
+    },
+    {
+      "id": "Fortunu_And_Cashuru",
+      "name": "Fortunu And Cashuru",
+      "wiki_valid": false
+    },
+    {
+      "id": "Foxini_Lanternini",
+      "name": "Foxini Lanternini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Fragola_Lala",
+      "name": "Fragola Lala",
+      "wiki_valid": false
+    },
+    {
+      "id": "Fragrama",
+      "name": "Fragrama",
+      "wiki_valid": false
+    },
+    {
+      "id": "Frankenmtteo",
+      "name": "Frankenmtteo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Frigo_Camelo",
+      "name": "Frigo Camelo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Frioninja",
+      "name": "Frioninja",
+      "wiki_valid": false
+    },
+    {
+      "id": "Frogato_Pirato",
+      "name": "Frogato Pirato",
+      "wiki_valid": true
+    },
+    {
+      "id": "Frogo_Elfo",
+      "name": "Frogo Elfo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Futbolini_Skatini",
+      "name": "Futbolini Skatini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ganganzelli_Trulala",
+      "name": "Ganganzelli Trulala",
+      "wiki_valid": true
+    },
+    {
+      "id": "Gangster_Crab",
+      "name": "Gangster Crab",
+      "wiki_valid": false
+    },
+    {
+      "id": "Gangster_Footera",
+      "name": "Gangster Footera",
+      "wiki_valid": true
+    },
+    {
+      "id": "Garamadundung",
+      "name": "Garamadundung",
+      "wiki_valid": false
+    },
+    {
+      "id": "Gato_Celestowebp",
+      "name": "Gato Celestowebp",
+      "wiki_valid": false
+    },
+    {
+      "id": "Gattatin",
+      "name": "Gattatin",
+      "wiki_valid": false
+    },
+    {
+      "id": "Gattatinoneonino",
+      "name": "Gattatinoneonino",
+      "wiki_valid": false
+    },
+    {
+      "id": "Gattito_Tacoto",
+      "name": "Gattito Tacoto",
+      "wiki_valid": true
+    },
+    {
+      "id": "Giftspider",
+      "name": "Giftspider",
+      "wiki_valid": false
+    },
+    {
+      "id": "Ginger_Cisterna",
+      "name": "Ginger Cisterna",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ginger_Gerat",
+      "name": "Ginger Gerat",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ginger_Globo",
+      "name": "Ginger Globo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Girafa_Celestre",
+      "name": "Girafa Celestre",
+      "wiki_valid": true
+    },
+    {
+      "id": "Glaciator",
+      "name": "Glaciator",
+      "wiki_valid": true
+    },
+    {
+      "id": "Globba_Steppa",
+      "name": "Globba Steppa",
+      "wiki_valid": false
+    },
+    {
+      "id": "Glorbofruttodrillo",
+      "name": "Glorbofruttodrillo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Goat",
+      "name": "Goat",
+      "wiki_valid": true
+    },
+    {
+      "id": "Gobblino_Uniciclino",
+      "name": "Gobblino Uniciclino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Gold_Gold_Gold",
+      "name": "Gold Gold Gold",
+      "wiki_valid": true
+    },
+    {
+      "id": "Gorillo_Subwoofero",
+      "name": "Gorillo Subwoofero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Gorillo_Watermelondrillo",
+      "name": "Gorillo Watermelondrillo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Graipuss",
+      "name": "Graipuss",
+      "wiki_valid": false
+    },
+    {
+      "id": "Granny",
+      "name": "Granny",
+      "wiki_valid": true
+    },
+    {
+      "id": "Griffin",
+      "name": "Griffin",
+      "wiki_valid": true
+    },
+    {
+      "id": "Guerrirodigitale",
+      "name": "Guerrirodigitale",
+      "wiki_valid": false
+    },
+    {
+      "id": "Guest666t",
+      "name": "Guest666t",
+      "wiki_valid": false
+    },
+    {
+      "id": "Gym_Bros",
+      "name": "Gym Bros",
+      "wiki_valid": true
+    },
+    {
+      "id": "Harpuccino",
+      "name": "Harpuccino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Headlesshorseman",
+      "name": "Headlesshorseman",
+      "wiki_valid": false
+    },
+    {
+      "id": "Hohohosahur",
+      "name": "Hohohosahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "Hokka_Horloge",
+      "name": "Hokka Horloge",
+      "wiki_valid": true
+    },
+    {
+      "id": "Holy_Arepa",
+      "name": "Holy Arepa",
+      "wiki_valid": true
+    },
+    {
+      "id": "Hopilikalika_Hopilikalako",
+      "name": "Hopilikalika Hopilikalako",
+      "wiki_valid": true
+    },
+    {
+      "id": "Horegini_Boom",
+      "name": "Horegini Boom",
+      "wiki_valid": true
+    },
+    {
+      "id": "Hydra_Bunny",
+      "name": "Hydra Bunny",
+      "wiki_valid": true
+    },
+    {
+      "id": "Hydra_Dragon_Cannelloni",
+      "name": "Hydra Dragon Cannelloni",
+      "wiki_valid": true
+    },
+    {
+      "id": "Jacko_Jack_Jack",
+      "name": "Jacko Jack Jack",
+      "wiki_valid": true
+    },
+    {
+      "id": "Jacko_Spaventosa",
+      "name": "Jacko Spaventosa",
+      "wiki_valid": true
+    },
+    {
+      "id": "Jackorilla",
+      "name": "Jackorilla",
+      "wiki_valid": true
+    },
+    {
+      "id": "Jelly_Moby",
+      "name": "Jelly Moby",
+      "wiki_valid": true
+    },
+    {
+      "id": "Jinglejinglesahur",
+      "name": "Jinglejinglesahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "Job",
+      "name": "Job",
+      "wiki_valid": false
+    },
+    {
+      "id": "John_Doe",
+      "name": "John Doe",
+      "wiki_valid": true
+    },
+    {
+      "id": "John_Pork",
+      "name": "John Pork",
+      "wiki_valid": true
+    },
+    {
+      "id": "Jolly_Jolly_Sahur",
+      "name": "Jolly Jolly Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Kalika_Bros",
+      "name": "Kalika Bros",
+      "wiki_valid": true
+    },
+    {
+      "id": "Karkar_Sahur",
+      "name": "Karkar Sahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "Karkerheart_Luvkur",
+      "name": "Karkerheart Luvkur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Karkerkar_Kurkur",
+      "name": "Karkerkar Kurkur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ketchuru",
+      "name": "Ketchuru",
+      "wiki_valid": false
+    },
+    {
+      "id": "Ketupat_Bros",
+      "name": "Ketupat Bros",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ketupatkepat",
+      "name": "Ketupatkepat",
+      "wiki_valid": false
+    },
+    {
+      "id": "Krapuk_Pagi_Pagi",
+      "name": "Krapuk Pagi Pagi",
+      "wiki_valid": false
+    },
+    {
+      "id": "La_Anniversary_Grande",
+      "name": "La Anniversary Grande",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Chrismas_Grande",
+      "name": "La Chrismas Grande",
+      "wiki_valid": false
+    },
+    {
+      "id": "La_Cucaracha",
+      "name": "La Cucaracha",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Extinct_Grande",
+      "name": "La Extinct Grande",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Food_Combinasion",
+      "name": "La Food Combinasion",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Ginger_Sekolah",
+      "name": "La Ginger Sekolah",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Grande_Combinasion",
+      "name": "La Grande Combinasion",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Karkerkar_Combinasion",
+      "name": "La Karkerkar Combinasion",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Present_Vacca",
+      "name": "La Present Vacca",
+      "wiki_valid": false
+    },
+    {
+      "id": "La_Romantic_Grande",
+      "name": "La Romantic Grande",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Sahur_Combinasion",
+      "name": "La Sahur Combinasion",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Spooky_Grande",
+      "name": "La Spooky Grande",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Vacca_Jacko_Linterino",
+      "name": "La Vacca Jacko Linterino",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Vacca_Lepre_Lepreino",
+      "name": "La Vacca Lepre Lepreino",
+      "wiki_valid": true
+    },
+    {
+      "id": "La_Vaccca_Saturno_Saturnita",
+      "name": "La Vaccca Saturno Saturnita",
+      "wiki_valid": false
+    },
+    {
+      "id": "Las_Cappuchinas",
+      "name": "Las Cappuchinas",
+      "wiki_valid": true
+    },
+    {
+      "id": "Las_Sis",
+      "name": "Las Sis",
+      "wiki_valid": true
+    },
+    {
+      "id": "Las_Vaquitas_Saturnitas",
+      "name": "Las Vaquitas Saturnitas",
+      "wiki_valid": true
+    },
+    {
+      "id": "Lasecretcombinasion",
+      "name": "Lasecretcombinasion",
+      "wiki_valid": false
+    },
+    {
+      "id": "Lastralaleritas",
+      "name": "Lastralaleritas",
+      "wiki_valid": false
+    },
+    {
+      "id": "Lavadorito_Spinito",
+      "name": "Lavadorito Spinito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Lazyducky",
+      "name": "Lazyducky",
+      "wiki_valid": false
+    },
+    {
+      "id": "Lerulerulerule",
+      "name": "Lerulerulerule",
+      "wiki_valid": true
+    },
+    {
+      "id": "Liliri_Lalira",
+      "name": "Liliri Lalira",
+      "wiki_valid": false
+    },
+    {
+      "id": "Lionel_Cactuseli",
+      "name": "Lionel Cactuseli",
+      "wiki_valid": true
+    },
+    {
+      "id": "List_List_List_Sahur",
+      "name": "List List List Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_25",
+      "name": "Los 25",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_67_Brainrot",
+      "name": "Los 67 Brainrot",
+      "wiki_valid": false
+    },
+    {
+      "id": "Los_Amigos",
+      "name": "Los Amigos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Bombinitos",
+      "name": "Los Bombinitos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Bros",
+      "name": "Los Bros",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Bunitos",
+      "name": "Los Bunitos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Burritos",
+      "name": "Los Burritos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Candies",
+      "name": "Los Candies",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Chihuaninis",
+      "name": "Los Chihuaninis",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Chillis",
+      "name": "Los Chillis",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Combinasionas",
+      "name": "Los Combinasionas",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Cucarachas",
+      "name": "Los Cucarachas",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Cupids",
+      "name": "Los Cupids",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Ditos",
+      "name": "Los Ditos",
+      "wiki_valid": false
+    },
+    {
+      "id": "Los_Gattitos",
+      "name": "Los Gattitos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Hackers",
+      "name": "Los Hackers",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Jolly_Combinasionas",
+      "name": "Los Jolly Combinasionas",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Mi_Gatitos",
+      "name": "Los Mi Gatitos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Mobilis",
+      "name": "Los Mobilis",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Orcalitos",
+      "name": "Los Orcalitos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Planitos",
+      "name": "Los Planitos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Primos",
+      "name": "Los Primos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Puggies",
+      "name": "Los Puggies",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Sekolahs",
+      "name": "Los Sekolahs",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Spaghettis",
+      "name": "Los Spaghettis",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Spyderinis",
+      "name": "Los Spyderinis",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Sweethearts",
+      "name": "Los Sweethearts",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Tacoritas",
+      "name": "Los Tacoritas",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Tipi_Tacos",
+      "name": "Los Tipi Tacos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Tralaleritos",
+      "name": "Los Tralaleritos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Trios",
+      "name": "Los Trios",
+      "wiki_valid": true
+    },
+    {
+      "id": "Los_Tungtungtungcitos",
+      "name": "Los Tungtungtungcitos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Loscrocodillitos",
+      "name": "Loscrocodillitos",
+      "wiki_valid": false
+    },
+    {
+      "id": "Loshotspotsitos",
+      "name": "Loshotspotsitos",
+      "wiki_valid": false
+    },
+    {
+      "id": "Losjobcitos",
+      "name": "Losjobcitos",
+      "wiki_valid": false
+    },
+    {
+      "id": "Loskarkeritos",
+      "name": "Loskarkeritos",
+      "wiki_valid": false
+    },
+    {
+      "id": "Losmatteos",
+      "name": "Losmatteos",
+      "wiki_valid": false
+    },
+    {
+      "id": "Losnoomyhotspotsitos",
+      "name": "Losnoomyhotspotsitos",
+      "wiki_valid": false
+    },
+    {
+      "id": "Lospookycombi",
+      "name": "Lospookycombi",
+      "wiki_valid": false
+    },
+    {
+      "id": "Losquesadillas",
+      "name": "Losquesadillas",
+      "wiki_valid": false
+    },
+    {
+      "id": "Lostortuss",
+      "name": "Lostortuss",
+      "wiki_valid": false
+    },
+    {
+      "id": "Love_Love_Bear",
+      "name": "Love Love Bear",
+      "wiki_valid": true
+    },
+    {
+      "id": "Love_Love_Love_Sahur",
+      "name": "Love Love Love Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Lovin_Rose",
+      "name": "Lovin Rose",
+      "wiki_valid": true
+    },
+    {
+      "id": "Luck_Luck_Luck_Sahur",
+      "name": "Luck Luck Luck Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Lumaca_Malefica",
+      "name": "Lumaca Malefica",
+      "wiki_valid": true
+    },
+    {
+      "id": "Luvluvluv",
+      "name": "Luvluvluv",
+      "wiki_valid": false
+    },
+    {
+      "id": "Magiribbit",
+      "name": "Magiribbit",
+      "wiki_valid": false
+    },
+    {
+      "id": "Malameamarele",
+      "name": "Malameamarele",
+      "wiki_valid": false
+    },
+    {
+      "id": "Mangolini_Parrochini",
+      "name": "Mangolini Parrochini",
+      "wiki_valid": false
+    },
+    {
+      "id": "Mariachicora",
+      "name": "Mariachicora",
+      "wiki_valid": false
+    },
+    {
+      "id": "Mastodontico_Telepiedone",
+      "name": "Mastodontico Telepiedone",
+      "wiki_valid": true
+    },
+    {
+      "id": "Mateo_Fish",
+      "name": "Mateo Fish",
+      "wiki_valid": false
+    },
+    {
+      "id": "Matteofr",
+      "name": "Matteofr",
+      "wiki_valid": false
+    },
+    {
+      "id": "Mi_Gatito",
+      "name": "Mi Gatito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Mieteteira_Bicicleteira",
+      "name": "Mieteteira Bicicleteira",
+      "wiki_valid": true
+    },
+    {
+      "id": "Money_Money_Bros",
+      "name": "Money Money Bros",
+      "wiki_valid": true
+    },
+    {
+      "id": "Money_Money_Man",
+      "name": "Money Money Man",
+      "wiki_valid": true
+    },
+    {
+      "id": "Money_Money_Puggy",
+      "name": "Money Money Puggy",
+      "wiki_valid": true
+    },
+    {
+      "id": "Money_Money_Reindeer",
+      "name": "Money Money Reindeer",
+      "wiki_valid": true
+    },
+    {
+      "id": "Mummio_Rappitto",
+      "name": "Mummio Rappitto",
+      "wiki_valid": true
+    },
+    {
+      "id": "Mummy_Ambalabu",
+      "name": "Mummy Ambalabu",
+      "wiki_valid": true
+    },
+    {
+      "id": "Mythic_Lucky_Block",
+      "name": "Mythic Lucky Block",
+      "wiki_valid": true
+    },
+    {
+      "id": "Nacho_Spyder",
+      "name": "Nacho Spyder",
+      "wiki_valid": true
+    },
+    {
+      "id": "Newblueberrinni",
+      "name": "Newblueberrinni",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noel",
+      "name": "Noel",
+      "wiki_valid": false
+    },
+    {
+      "id": "Nomyhotspot",
+      "name": "Nomyhotspot",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noo_My_Candy_Transparent",
+      "name": "Noo My Candy Transparent",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noo_My_Eggs",
+      "name": "Noo My Eggs",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noo_My_Examen",
+      "name": "Noo My Examen",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noo_My_Gold",
+      "name": "Noo My Gold",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noo_My_Heart",
+      "name": "Noo My Heart",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noo_My_Present",
+      "name": "Noo My Present",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noobini_Pizzanini",
+      "name": "Noobini Pizzanini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Noobinis",
+      "name": "Noobinis",
+      "wiki_valid": false
+    },
+    {
+      "id": "Noobinisantanini",
+      "name": "Noobinisantanini",
+      "wiki_valid": false
+    },
+    {
+      "id": "Nooo_My_Polizia",
+      "name": "Nooo My Polizia",
+      "wiki_valid": false
+    },
+    {
+      "id": "Nuclearo_Dinosauro",
+      "name": "Nuclearo Dinosauro",
+      "wiki_valid": false
+    },
+    {
+      "id": "Odin_Din_Din_Dun",
+      "name": "Odin Din Din Dun",
+      "wiki_valid": true
+    },
+    {
+      "id": "Orbi_Mochi",
+      "name": "Orbi Mochi",
+      "wiki_valid": true
+    },
+    {
+      "id": "Orcaledon",
+      "name": "Orcaledon",
+      "wiki_valid": true
+    },
+    {
+      "id": "Orcalero_Orcala",
+      "name": "Orcalero Orcala",
+      "wiki_valid": true
+    },
+    {
+      "id": "Orcalita_Orcala",
+      "name": "Orcalita Orcala",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pakrahmatmamat",
+      "name": "Pakrahmatmamat",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pakrematina",
+      "name": "Pakrematina",
+      "wiki_valid": false
+    },
+    {
+      "id": "Pancake_And_Syrup",
+      "name": "Pancake And Syrup",
+      "wiki_valid": false
+    },
+    {
+      "id": "Pandaccini_Bananini",
+      "name": "Pandaccini Bananini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pandanini_Frostini",
+      "name": "Pandanini Frostini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Paradiso_Axolottino",
+      "name": "Paradiso Axolottino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Patteo",
+      "name": "Patteo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pengolino_Nuvoletto",
+      "name": "Pengolino Nuvoletto",
+      "wiki_valid": true
+    },
+    {
+      "id": "Penguino_Cocosino",
+      "name": "Penguino Cocosino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Penguintree",
+      "name": "Penguintree",
+      "wiki_valid": false
+    },
+    {
+      "id": "Perochello_Lemonchello",
+      "name": "Perochello Lemonchello",
+      "wiki_valid": true
+    },
+    {
+      "id": "Perrito_Burrito",
+      "name": "Perrito Burrito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pi_Pi_Watermelon",
+      "name": "Pi Pi Watermelon",
+      "wiki_valid": true
+    },
+    {
+      "id": "Piccione_Machina",
+      "name": "Piccione Machina",
+      "wiki_valid": false
+    },
+    {
+      "id": "Piccionetta_Macchina",
+      "name": "Piccionetta Macchina",
+      "wiki_valid": false
+    },
+    {
+      "id": "Pineaplino",
+      "name": "Pineaplino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pintealotto",
+      "name": "Pintealotto",
+      "wiki_valid": false
+    },
+    {
+      "id": "Pipi_Avocado",
+      "name": "Pipi Avocado",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pipi_Corni",
+      "name": "Pipi Corni",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pipi_Kiwi",
+      "name": "Pipi Kiwi",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pipi_Potato",
+      "name": "Pipi Potato",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pirulitoita_Bicicleteira",
+      "name": "Pirulitoita Bicicleteira",
+      "wiki_valid": true
+    },
+    {
+      "id": "Please_My_Present",
+      "name": "Please My Present",
+      "wiki_valid": false
+    },
+    {
+      "id": "Poppopsahur",
+      "name": "Poppopsahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "Popuru_And_Fizzuru",
+      "name": "Popuru And Fizzuru",
+      "wiki_valid": false
+    },
+    {
+      "id": "Pot_Hotspot",
+      "name": "Pot Hotspot",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pothotpumkin",
+      "name": "Pothotpumkin",
+      "wiki_valid": false
+    },
+    {
+      "id": "Pretzo_Robo",
+      "name": "Pretzo Robo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Puffaball",
+      "name": "Puffaball",
+      "wiki_valid": true
+    },
+    {
+      "id": "Pumpkini_Spyderini",
+      "name": "Pumpkini Spyderini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Quackini_Snackini",
+      "name": "Quackini Snackini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Quackula",
+      "name": "Quackula",
+      "wiki_valid": true
+    },
+    {
+      "id": "Quesadilla_Crocodila",
+      "name": "Quesadilla Crocodila",
+      "wiki_valid": true
+    },
+    {
+      "id": "Quesadillo_Vampiro",
+      "name": "Quesadillo Vampiro",
+      "wiki_valid": true
+    },
+    {
+      "id": "Quivioli_Ameleonni",
+      "name": "Quivioli Ameleonni",
+      "wiki_valid": true
+    },
+    {
+      "id": "Raccooni",
+      "name": "Raccooni",
+      "wiki_valid": false
+    },
+    {
+      "id": "Reindeer_Tralala",
+      "name": "Reindeer Tralala",
+      "wiki_valid": true
+    },
+    {
+      "id": "Reinito_Sleighito",
+      "name": "Reinito Sleighito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Rhino_Helicopterino",
+      "name": "Rhino Helicopterino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Rhino_Toasterino",
+      "name": "Rhino Toasterino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Rico_Dinero",
+      "name": "Rico Dinero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ringrangbus2",
+      "name": "Ringrangbus2",
+      "wiki_valid": false
+    },
+    {
+      "id": "Robo_Grafito",
+      "name": "Robo Grafito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Rocco_Disco",
+      "name": "Rocco Disco",
+      "wiki_valid": true
+    },
+    {
+      "id": "Rosey_And_Teddy",
+      "name": "Rosey And Teddy",
+      "wiki_valid": false
+    },
+    {
+      "id": "Rossetti_Tualetti",
+      "name": "Rossetti Tualetti",
+      "wiki_valid": false
+    },
+    {
+      "id": "Rubrikiko",
+      "name": "Rubrikiko",
+      "wiki_valid": true
+    },
+    {
+      "id": "Salamino_Penguino",
+      "name": "Salamino Penguino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Sammy_Blud",
+      "name": "Sammy Blud",
+      "wiki_valid": false
+    },
+    {
+      "id": "Sammyni_Cakini",
+      "name": "Sammyni Cakini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Sammyni_Fattini",
+      "name": "Sammyni Fattini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Santa_Hotspot",
+      "name": "Santa Hotspot",
+      "wiki_valid": true
+    },
+    {
+      "id": "Santteo",
+      "name": "Santteo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Sealo_Regalo",
+      "name": "Sealo Regalo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Secretluckyblock",
+      "name": "Secretluckyblock",
+      "wiki_valid": false
+    },
+    {
+      "id": "Serafinna_Medusella",
+      "name": "Serafinna Medusella",
+      "wiki_valid": true
+    },
+    {
+      "id": "Seraphino_Gruyero",
+      "name": "Seraphino Gruyero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Sig_Ma_Boy",
+      "name": "Sig Ma Boy",
+      "wiki_valid": false
+    },
+    {
+      "id": "Sigmagirl",
+      "name": "Sigmagirl",
+      "wiki_valid": false
+    },
+    {
+      "id": "Skibidi_Toilet",
+      "name": "Skibidi Toilet",
+      "wiki_valid": true
+    },
+    {
+      "id": "Skully",
+      "name": "Skully",
+      "wiki_valid": false
+    },
+    {
+      "id": "Snailenzo",
+      "name": "Snailenzo",
+      "wiki_valid": true
+    },
+    {
+      "id": "Snailo_Clovero",
+      "name": "Snailo Clovero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Sought_The_Naught",
+      "name": "Sought The Naught",
+      "wiki_valid": false
+    },
+    {
+      "id": "Spaghettitualetti",
+      "name": "Spaghettitualetti",
+      "wiki_valid": false
+    },
+    {
+      "id": "Spinny_Hammy",
+      "name": "Spinny Hammy",
+      "wiki_valid": true
+    },
+    {
+      "id": "Spioniro_Golubiro",
+      "name": "Spioniro Golubiro",
+      "wiki_valid": true
+    },
+    {
+      "id": "Spongini_Quackini",
+      "name": "Spongini Quackini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Spookypumpky",
+      "name": "Spookypumpky",
+      "wiki_valid": false
+    },
+    {
+      "id": "Spyder_Elephant",
+      "name": "Spyder Elephant",
+      "wiki_valid": true
+    },
+    {
+      "id": "Squalanana",
+      "name": "Squalanana",
+      "wiki_valid": true
+    },
+    {
+      "id": "Statutinolibertino",
+      "name": "Statutinolibertino",
+      "wiki_valid": false
+    },
+    {
+      "id": "Steal_A_Brainrot_67",
+      "name": "Steal A Brainrot 67",
+      "wiki_valid": false
+    },
+    {
+      "id": "Stoppo_Luminino",
+      "name": "Stoppo Luminino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Strawberrelli_Flamingelli",
+      "name": "Strawberrelli Flamingelli",
+      "wiki_valid": true
+    },
+    {
+      "id": "Strawberrita",
+      "name": "Strawberrita",
+      "wiki_valid": true
+    },
+    {
+      "id": "Strawberry_Elephant",
+      "name": "Strawberry Elephant",
+      "wiki_valid": true
+    },
+    {
+      "id": "Supremecombinasion",
+      "name": "Supremecombinasion",
+      "wiki_valid": false
+    },
+    {
+      "id": "Svinina_Bombardino",
+      "name": "Svinina Bombardino",
+      "wiki_valid": true
+    },
+    {
+      "id": "Swag_Soda",
+      "name": "Swag Soda",
+      "wiki_valid": true
+    },
+    {
+      "id": "Swaggy_Bros",
+      "name": "Swaggy Bros",
+      "wiki_valid": true
+    },
+    {
+      "id": "Ta_Ta_Ta_Sahur",
+      "name": "Ta Ta Ta Sahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "Taco_Combinasion",
+      "name": "Taco Combinasion",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tacorillo_Crocodrilo",
+      "name": "Tacorillo Crocodrilo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tacorita_Bicicleta",
+      "name": "Tacorita Bicicleta",
+      "wiki_valid": true
+    },
+    {
+      "id": "Talpa_Di_Fero",
+      "name": "Talpa Di Fero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tangtang",
+      "name": "Tangtang",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tartaragnoo",
+      "name": "Tartaragnoo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tartaruga_Cisternaaaa",
+      "name": "Tartaruga Cisternaaaa",
+      "wiki_valid": false
+    },
+    {
+      "id": "Te_Te_Te_Sahur",
+      "name": "Te Te Te Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Teenage_Turtle",
+      "name": "Teenage Turtle",
+      "wiki_valid": false
+    },
+    {
+      "id": "Telemorte",
+      "name": "Telemorte",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tentacolo_Tecnico",
+      "name": "Tentacolo Tecnico",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tictac_Sahur",
+      "name": "Tictac Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tigrilini_Watermelini1",
+      "name": "Tigrilini Watermelini1",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tigroligre",
+      "name": "Tigroligre",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tim_Cheese",
+      "name": "Tim Cheese",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tipi_Topi_Taco",
+      "name": "Tipi Topi Taco",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tirilikalikatirilikalakotransparent",
+      "name": "Tirilikalikatirilikalakotransparent",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tititi_Sahur",
+      "name": "Tititi Sahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "To_To_To_Sahur",
+      "name": "To To To Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tob_Tobi_Tobi",
+      "name": "Tob Tobi Tobi",
+      "wiki_valid": true
+    },
+    {
+      "id": "Toiletto",
+      "name": "Toiletto",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tootini_Shrimpini",
+      "name": "Tootini Shrimpini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tortugini_Dragonfrutini",
+      "name": "Tortugini Dragonfrutini",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tracoducotulu",
+      "name": "Tracoducotulu",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tractordino",
+      "name": "Tractordino",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tralaledon",
+      "name": "Tralaledon",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tralalerotralala",
+      "name": "Tralalerotralala",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tralalita",
+      "name": "Tralalita",
+      "wiki_valid": false
+    },
+    {
+      "id": "Treetreetreesahur",
+      "name": "Treetreetreesahur",
+      "wiki_valid": false
+    },
+    {
+      "id": "Trenostruzzo_Turbo_3000",
+      "name": "Trenostruzzo Turbo 3000",
+      "wiki_valid": true
+    },
+    {
+      "id": "Trenostruzzo_Turbo_4000",
+      "name": "Trenostruzzo Turbo 4000",
+      "wiki_valid": true
+    },
+    {
+      "id": "Trenoturbo_Axolotrico_9000",
+      "name": "Trenoturbo Axolotrico 9000",
+      "wiki_valid": false
+    },
+    {
+      "id": "Tric_Trac_Baraboom_5",
+      "name": "Tric Trac Baraboom 5",
+      "wiki_valid": false
+    },
+    {
+      "id": "Trickortreat",
+      "name": "Trickortreat",
+      "wiki_valid": false
+    },
+    {
+      "id": "Triplito_Tralaleritos",
+      "name": "Triplito Tralaleritos",
+      "wiki_valid": true
+    },
+    {
+      "id": "Trippi_Troppi",
+      "name": "Trippi Troppi",
+      "wiki_valid": true
+    },
+    {
+      "id": "Trippi_Troppi_Trooppi_Trooaaapppaahelp_Im_About_To_Get_Into",
+      "name": "Trippi Troppi Trooppi Trooaaapppaahelp Im About To Get Into",
+      "wiki_valid": false
+    },
+    {
+      "id": "Trulimero_Trulicina",
+      "name": "Trulimero Trulicina",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tuff_Toucan",
+      "name": "Tuff Toucan",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tukanno_Bananno",
+      "name": "Tukanno Bananno",
+      "wiki_valid": true
+    },
+    {
+      "id": "Tung_Tung_Tung_Sahur",
+      "name": "Tung Tung Tung Sahur",
+      "wiki_valid": true
+    },
+    {
+      "id": "Unclito_Samito",
+      "name": "Unclito Samito",
+      "wiki_valid": true
+    },
+    {
+      "id": "Urubini_Flamenguini",
+      "name": "Urubini Flamenguini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Vampiracappuccina",
+      "name": "Vampiracappuccina",
+      "wiki_valid": false
+    },
+    {
+      "id": "Ventoliero_Pavonero",
+      "name": "Ventoliero Pavonero",
+      "wiki_valid": true
+    },
+    {
+      "id": "Vulturino",
+      "name": "Vulturino",
+      "wiki_valid": false
+    },
+    {
+      "id": "Watermelon_Doggy",
+      "name": "Watermelon Doggy",
+      "wiki_valid": false
+    },
+    {
+      "id": "Win_Or_Lose",
+      "name": "Win Or Lose",
+      "wiki_valid": false
+    },
+    {
+      "id": "Wombo",
+      "name": "Wombo",
+      "wiki_valid": false
+    },
+    {
+      "id": "Yessmyexamine",
+      "name": "Yessmyexamine",
+      "wiki_valid": false
+    },
+    {
+      "id": "Yeti_Claus",
+      "name": "Yeti Claus",
+      "wiki_valid": true
+    },
+    {
+      "id": "Zibra_Zubra_Zibralini",
+      "name": "Zibra Zubra Zibralini",
+      "wiki_valid": true
+    },
+    {
+      "id": "Zombietralala",
+      "name": "Zombietralala",
+      "wiki_valid": false
+    }
+  ]
+}

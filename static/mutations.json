@@ -1,0 +1,16 @@
+[
+  { "id": "default",     "name": "Default",     "multiplier": 1,    "file": "default.png",    "wikiFile": "Default.png" },
+  { "id": "gold",        "name": "Gold",        "multiplier": 1.25, "file": "gold.png",       "wikiFile": "Gold3.png" },
+  { "id": "diamond",     "name": "Diamond",     "multiplier": 1.5,  "file": "diamond.png",    "wikiFile": "Diamond3.png" },
+  { "id": "rainbow",     "name": "Rainbow",     "multiplier": 10,   "file": "rainbow.png",    "wikiFile": "Rainbow2.png" },
+  { "id": "bloodrot",    "name": "Bloodrot",    "multiplier": 2,    "file": "bloodrot.png",   "wikiFile": "Bloodrot.png" },
+  { "id": "candy",       "name": "Candy",       "multiplier": 4,    "file": "candy.png",      "wikiFile": "Candy2.png" },
+  { "id": "lava",        "name": "Lava",        "multiplier": 6,    "file": "lava.png",       "wikiFile": "Lava2.png" },
+  { "id": "galaxy",      "name": "Galaxy",      "multiplier": 7,    "file": "galaxy.png",     "wikiFile": "Galaxy2.png" },
+  { "id": "radioactive", "name": "Radioactive", "multiplier": 8.5,  "file": "radioactive.png","wikiFile": "Image (2).png" },
+  { "id": "yin_yang",    "name": "Yin Yang",    "multiplier": 7.5,  "file": "yin_yang.png",   "wikiFile": "Yingyangicon.png" },
+  { "id": "cursed",      "name": "Cursed",      "multiplier": 9,    "file": "cursed.png",     "wikiFile": "Cursed_Mutation1.png" },
+  { "id": "divine",      "name": "Divine",      "multiplier": 10,   "file": "divine.png",     "wikiFile": "DivineMutation.png" },
+  { "id": "cyber",       "name": "Cyber",       "multiplier": 11,   "file": "cyber.png",      "wikiFile": "CyberMutation.png" },
+  { "id": "disco_mut",   "name": "Disco",       "multiplier": 11,   "file": "disco_mut.png",  "wikiFile": "Mutation01.png" }
+]

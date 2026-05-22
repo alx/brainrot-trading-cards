@@ -1,0 +1,2265 @@
+{
+  "_comment": "Brainrot catalog. Drop matching .webp files in this folder. id = filename (without extension).",
+  "brainrots": [
+    {
+      "id": "1x1x1x1",
+      "name": "1x1x1x1t",
+      "income": 1100000
+    },
+    {
+      "id": "25",
+      "name": "25",
+      "income": 2500000
+    },
+    {
+      "id": "67",
+      "name": "67",
+      "income": 7500000
+    },
+    {
+      "id": "Abyssaloco",
+      "name": "Abyssaloco",
+      "income": 33330000
+    },
+    {
+      "id": "Agarrini_la_Palini",
+      "name": "Agarrini La Palini",
+      "income": 425000
+    },
+    {
+      "id": "Alessio",
+      "name": "Alessio",
+      "income": 85000
+    },
+    {
+      "id": "Anpali_Babel",
+      "name": "Anpali Babel",
+      "income": 280000
+    },
+    {
+      "id": "Antonio",
+      "name": "Antonio",
+      "income": 125000000
+    },
+    {
+      "id": "Appelini",
+      "name": "Appelini",
+      "income": 300000
+    },
+    {
+      "id": "Aquanaut",
+      "name": "Aquanaut",
+      "income": 245000
+    },
+    {
+      "id": "Arcadopus",
+      "name": "Arcadopus",
+      "income": 5000000
+    },
+    {
+      "id": "Arcadragon",
+      "name": "Arcadragon",
+      "income": 150000000
+    },
+    {
+      "id": "Astrolero_Cervalero",
+      "name": "Astrolero Cervalero",
+      "income": 280000
+    },
+    {
+      "id": "Avocadini_Antilopini",
+      "name": "Avocadini Antilopini",
+      "income": 115
+    },
+    {
+      "id": "Avocadini_Guffo",
+      "name": "Avocadiniguffo",
+      "income": 225
+    },
+    {
+      "id": "Avocadorilla",
+      "name": "Avocadorilla",
+      "income": 7000
+    },
+    {
+      "id": "Bacuru_and_Egguru",
+      "name": "Bacuru And Egguru",
+      "income": 24000000
+    },
+    {
+      "id": "Ballerina_Cappuccina",
+      "name": "Ballerina Cappuccina",
+      "income": 500
+    },
+    {
+      "id": "Ballerina_Peppermintina",
+      "name": "Ballerina Peppermintina",
+      "income": 215000
+    },
+    {
+      "id": "Ballerino_Lololo",
+      "name": "Ballerinolololo",
+      "income": 200000
+    },
+    {
+      "id": "Bambini_Crostini",
+      "name": "Bambini Crostini",
+      "income": 135
+    },
+    {
+      "id": "Bambu_Bambu_Sahur",
+      "name": "Bambu Bambu Sahur",
+      "income": 275000
+    },
+    {
+      "id": "Bananita_Dolphinita",
+      "name": "Bananita Dolphinita",
+      "income": 150
+    },
+    {
+      "id": "Bananito",
+      "name": "Bananito",
+      "income": 15000000
+    },
+    {
+      "id": "Bananito_Bandito",
+      "name": "Bananito Bandito",
+      "income": 16500
+    },
+    {
+      "id": "Bandito_Axolito",
+      "name": "Bandito Axolito1",
+      "income": 1200
+    },
+    {
+      "id": "Bandito_Bobritto",
+      "name": "Bandito Bobritto",
+      "income": 35
+    },
+    {
+      "id": "Baskito",
+      "name": "Baskito",
+      "income": 16000000
+    },
+    {
+      "id": "Bee_Loco",
+      "name": "Bee Loco",
+      "income": 13500
+    },
+    {
+      "id": "Belula_Beluga",
+      "name": "Belula Beluga",
+      "income": 290000
+    },
+    {
+      "id": "Berenjello_Angello",
+      "name": "Berenjello Angello",
+      "income": 18000
+    },
+    {
+      "id": "Berryno",
+      "name": "Berryno",
+      "income": 1500000
+    },
+    {
+      "id": "Bisonte_Giuppitere",
+      "name": "Bisonte Giuppitere Normal",
+      "income": 325000
+    },
+    {
+      "id": "Blackhole_Goat",
+      "name": "Blackhole Goat",
+      "income": 400000
+    },
+    {
+      "id": "Blueberrinni_Octopusini",
+      "name": "Blueberrinni Octopusini",
+      "income": 1000
+    },
+    {
+      "id": "Boatito_Auratito",
+      "name": "Boatito Auratito",
+      "income": 525000
+    },
+    {
+      "id": "Boba_Panda",
+      "name": "Boba Panda",
+      "income": 270000
+    },
+    {
+      "id": "Bombardini_Tortinii",
+      "name": "Bombardini Tortinii",
+      "income": 225000
+    },
+    {
+      "id": "Bombardiro_Crocodilo",
+      "name": "Bombardiro Crocodilo",
+      "income": 2500
+    },
+    {
+      "id": "Bombombini_Gusini",
+      "name": "Bombombini Gusini",
+      "income": 5000
+    },
+    {
+      "id": "Boneca_Ambalabu",
+      "name": "Boneca Ambalabu",
+      "income": 40
+    },
+    {
+      "id": "Boppin_Bunny",
+      "name": "Boppin Bunny",
+      "income": 80000000
+    },
+    {
+      "id": "Brasilini_Berimbini",
+      "name": "Brasilini Berimbini",
+      "income": 285000
+    },
+    {
+      "id": "Brr_Brr_Patapim",
+      "name": "Brr Brr Patapim",
+      "income": 100
+    },
+    {
+      "id": "Brr_es_Teh_Patipum",
+      "name": "Brr Es Teh Patipum",
+      "income": 225000
+    },
+    {
+      "id": "Brri_Brri_Bicus_Dicus_Bombicus",
+      "name": "Brri Brri Bicus Dicus Bombicus",
+      "income": 175
+    },
+    {
+      "id": "Brunito_Marsito",
+      "name": "Brunito Marsito",
+      "income": 3500000
+    },
+    {
+      "id": "Brutto_Gialutto",
+      "name": "Brutto Gialutto",
+      "income": 3000
+    },
+    {
+      "id": "Buho_de_Noelo",
+      "name": "Buho de Noelo",
+      "income": 267500
+    },
+    {
+      "id": "Buho_de_Volto",
+      "name": "Buho De Volto",
+      "income": 2700000
+    },
+    {
+      "id": "Buho_del_Cielo",
+      "name": "Buho Del Cielo",
+      "income": 1300
+    },
+    {
+      "id": "Buho_de_Fuego",
+      "name": "Buhodefuego",
+      "income": 1800
+    },
+    {
+      "id": "Bulbito_Bandito_Traktorito",
+      "name": "Bulbito Bandito Traktorito",
+      "income": 205000
+    },
+    {
+      "id": "Bunito_Bunito_Spinito",
+      "name": "Bunito Bunito Spinito",
+      "income": 3000000
+    },
+    {
+      "id": "Bunny_and_Eggy",
+      "name": "Bunny And Eggy",
+      "income": 170000000
+    },
+    {
+      "id": "Bunny_Bunny_Bunny_Sahur",
+      "name": "Bunny Bunny Bunny Sahur",
+      "income": 2250000
+    },
+    {
+      "id": "Bunny_Tralala",
+      "name": "Bunny Tralala",
+      "income": 270000
+    },
+    {
+      "id": "Bunnyman",
+      "name": "Bunnyman",
+      "income": 1500000
+    },
+    {
+      "id": "Buntteo",
+      "name": "Buntteo",
+      "income": 850000
+    },
+    {
+      "id": "Burbaloni_Loliloli",
+      "name": "Burbaloni Loliloli",
+      "income": 200
+    },
+    {
+      "id": "Burguro_And_Fryuro",
+      "name": "Burguro And Fryuro",
+      "income": 150000000
+    },
+    {
+      "id": "Burrito_Bandito",
+      "name": "Burrito Bandito",
+      "income": 4000000
+    },
+    {
+      "id": "Cacasito_Satalito",
+      "name": "Cacasito Satalito",
+      "income": 240000
+    },
+    {
+      "id": "Cachorrito_Melonito",
+      "name": "Cachorrito Melonito",
+      "income": 13000
+    },
+    {
+      "id": "Cacto_Hipopotamo",
+      "name": "Cacto Hipopotamo1",
+      "income": 50
+    },
+    {
+      "id": "Camera_Ramena",
+      "name": "Camera Ramena",
+      "income": 17000000
+    },
+    {
+      "id": "Capi_Taco",
+      "name": "Capi Taco",
+      "income": 155000
+    },
+    {
+      "id": "Capitano_Moby",
+      "name": "Capitano Moby",
+      "income": 160000000
+    },
+    {
+      "id": "Cappuccino_Assassino",
+      "name": "Cappuccino Assassino",
+      "income": 75
+    },
+    {
+      "id": "Cappuccino_Clownino",
+      "name": "Cappuccinoclown",
+      "income": 285000
+    },
+    {
+      "id": "Caramello_Filtrello",
+      "name": "Caramello Filtrello2",
+      "income": 1000
+    },
+    {
+      "id": "Carloo",
+      "name": "Carloo",
+      "income": 13500
+    },
+    {
+      "id": "Carrotini_Brainini",
+      "name": "Carrotini Brainini",
+      "income": 15000
+    },
+    {
+      "id": "Cash_or_Card",
+      "name": "Cash Or Card",
+      "income": 100000000
+    },
+    {
+      "id": "Cavallo_Virtuoso",
+      "name": "Cavallo Virtuoso",
+      "income": 7500
+    },
+    {
+      "id": "Celestial_Pegasus",
+      "name": "Celestial Pegasus",
+      "income": 175000000
+    },
+    {
+      "id": "Celularcini_Viciosini",
+      "name": "Celular",
+      "income": 22500000
+    },
+    {
+      "id": "Centrucci_Nuclucci",
+      "name": "Centrucci Nuclucci",
+      "income": 15500
+    },
+    {
+      "id": "Cerberus",
+      "name": "Cerberus",
+      "income": 175000000
+    },
+    {
+      "id": "Chachechi",
+      "name": "Chachechi",
+      "income": 400000
+    },
+    {
+      "id": "Chef_Crabracadabra",
+      "name": "Chef Crabracadabra",
+      "income": 600
+    },
+    {
+      "id": "Chicleteira_Bicicleteira",
+      "name": "Chicleteira Bicicleteira",
+      "income": 3500000
+    },
+    {
+      "id": "Chicleteira_Cupideira",
+      "name": "Chicleteira Cupideira",
+      "income": 17500000
+    },
+    {
+      "id": "Chicleteira_Noelteira",
+      "name": "Chicleteira Noelteira",
+      "income": 15000000
+    },
+    {
+      "id": "Chicleteirina_Bicicleteirina",
+      "name": "Chicleteirina Bicicleteirina",
+      "income": 4000000
+    },
+    {
+      "id": "Chihuanini_Taconini",
+      "name": "Chihuanini Taconini",
+      "income": 45000
+    },
+    {
+      "id": "Chill_Puppy",
+      "name": "Chill Puppy",
+      "income": 4000000
+    },
+    {
+      "id": "Chillin_Chili",
+      "name": "Chillin Chili",
+      "income": 25000000
+    },
+    {
+      "id": "Chimnino",
+      "name": "Chimnino",
+      "income": 14000000
+    },
+    {
+      "id": "Chimpanzini_Spiderini",
+      "name": "Chimpanzini Spiderini",
+      "income": 350000
+    },
+    {
+      "id": "Chimpanzini_Bananini",
+      "name": "Chimpanzinibananini",
+      "income": 300
+    },
+    {
+      "id": "Chipso_and_Queso",
+      "name": "Chipso and Queso",
+      "income": 25000000
+    },
+    {
+      "id": "Chocco_Bunny",
+      "name": "Chocco Bunny",
+      "income": 1400
+    },
+    {
+      "id": "Chrismasmamat",
+      "name": "Chrismasmamat",
+      "income": 277500
+    },
+    {
+      "id": "Churrito_Bunnito",
+      "name": "Churrito Bunnito",
+      "income": 21000000
+    },
+    {
+      "id": "Cigno_Fulgoro",
+      "name": "Cigno Fulgoro",
+      "income": 20000000
+    },
+    {
+      "id": "Clickerino_Crabo",
+      "name": "Clickerino Crabo",
+      "income": 1000
+    },
+    {
+      "id": "Cloverat_Clapat",
+      "name": "Cloverat Clapat",
+      "income": 60000000
+    },
+    {
+      "id": "Clovkur_Kurkur",
+      "name": "Clovkur Kurkur",
+      "income": 305000
+    },
+    {
+      "id": "Cocoa_Assassino",
+      "name": "Cocoa Assassino",
+      "income": 291000
+    },
+    {
+      "id": "Cocofanto_Elefanto",
+      "name": "Cocofanto",
+      "income": 19000
+    },
+    {
+      "id": "Cocosini_Mama",
+      "name": "Cocosini Mama",
+      "income": 1200
+    },
+    {
+      "id": "Coffin_Tung_Tung_Tung_Sahur",
+      "name": "Coffin Tung Tung",
+      "income": 1500000
+    },
+    {
+      "id": "Cola_Cat",
+      "name": "Cola Cat",
+      "income": 275000
+    },
+    {
+      "id": "Cooki_And_Milki",
+      "name": "Cooki And Milki",
+      "income": 155000000
+    },
+    {
+      "id": "Cooki_and_Milki",
+      "name": "Cooki and Milki",
+      "income": 155000000
+    },
+    {
+      "id": "Corn_Corn_Corn_Sahur",
+      "name": "Corn Corn Corn Sahur",
+      "income": 250000
+    },
+    {
+      "id": "Crabbo_Limonetta",
+      "name": "Crabbo Limonetta",
+      "income": 235000
+    },
+    {
+      "id": "Cuadramat_and_Pakrahmatmamat",
+      "name": "Cuadramat",
+      "income": 1400000
+    },
+    {
+      "id": "Cupcake_Koala",
+      "name": "Cupcake Koala",
+      "income": 60
+    },
+    {
+      "id": "Cupid_Cupid_Sahur",
+      "name": "Cupid Cupid Sahur",
+      "income": 3100000
+    },
+    {
+      "id": "Cupid_Hotspot",
+      "name": "Cupid Hotspot",
+      "income": 3500000
+    },
+    {
+      "id": "Digi_Narwhal",
+      "name": "Digi Narwhal",
+      "income": 200000000
+    },
+    {
+      "id": "Divino_Platypio",
+      "name": "Divino Platypio",
+      "income": 160000
+    },
+    {
+      "id": "DJ_Panda",
+      "name": "Dj Panda",
+      "income": 17500000
+    },
+    {
+      "id": "Doi_Doi_Do",
+      "name": "Doidoi",
+      "income": 260
+    },
+    {
+      "id": "Dolphini_Jetskini",
+      "name": "Dolphini Jetskini",
+      "income": 294500
+    },
+    {
+      "id": "Donkeyturbo_Express",
+      "name": "Donkeyturbo Express",
+      "income": 7500000
+    },
+    {
+      "id": "Dragon_Cannelloni",
+      "name": "Dragon Cannelloni",
+      "income": 250000000
+    },
+    {
+      "id": "Dragon_Gingerini",
+      "name": "Dragongingerini",
+      "income": 350000000
+    },
+    {
+      "id": "Dug_dug_dug",
+      "name": "Dug Dug Dug Brainrot",
+      "income": 35000000
+    },
+    {
+      "id": "Duggy_Bros",
+      "name": "Duggy Bros",
+      "income": 90000000
+    },
+    {
+      "id": "Dul_Dul_Dul",
+      "name": "Dul Dul Dul",
+      "income": 375000
+    },
+    {
+      "id": "Dumborino_Miracello",
+      "name": "Dumborino Miracello",
+      "income": 315000
+    },
+    {
+      "id": "Easter_Easter_Easter_Sahur",
+      "name": "Easter Easter Easter Sahur",
+      "income": 1250000
+    },
+    {
+      "id": "Eggdin_Egg_Egg_Dun",
+      "name": "Eggdin Egg Egg Dun",
+      "income": 310000
+    },
+    {
+      "id": "Eid_Eid_Eid_Sahur",
+      "name": "Eid Eid Eid Sahur",
+      "income": 3500000
+    },
+    {
+      "id": "Electro_Quacko",
+      "name": "Electro Quacko",
+      "income": 1800
+    },
+    {
+      "id": "Elefanto_Frigo",
+      "name": "Elefanto Frigo Transparent",
+      "income": 185000000
+    },
+    {
+      "id": "Esok_Sekolah",
+      "name": "Esoksekolah2",
+      "income": 30000000
+    },
+    {
+      "id": "Espresso_Signora",
+      "name": "Espresso Signora",
+      "income": 70000
+    },
+    {
+      "id": "Eviledon",
+      "name": "Eviledonn",
+      "income": 31500000
+    },
+    {
+      "id": "Extinct_Ballerina",
+      "name": "Extinct Ballerina",
+      "income": 125000
+    },
+    {
+      "id": "Extinct_Matteo",
+      "name": "Extinct Matteo",
+      "income": 625000
+    },
+    {
+      "id": "Extinct_Tralalero",
+      "name": "Extinct Tralalero",
+      "income": 450000
+    },
+    {
+      "id": "Festive_67",
+      "name": "Festive 67 Brainrot",
+      "income": 67000000
+    },
+    {
+      "id": "Fishboard",
+      "name": "Fishboard",
+      "income": 825000
+    },
+    {
+      "id": "Fishino_Clownino",
+      "name": "Fishino Clownino",
+      "income": 47000000
+    },
+    {
+      "id": "Fizzy_Soda",
+      "name": "Fizzy Soda",
+      "income": 17200
+    },
+    {
+      "id": "Flancito",
+      "name": "Flancito",
+      "income": 3750000
+    },
+    {
+      "id": "Flipa_Sandala",
+      "name": "Flipa Sandala",
+      "income": 6000000
+    },
+    {
+      "id": "Fluriflura",
+      "name": "Fluriflura",
+      "income": 7
+    },
+    {
+      "id": "Fortunu_and_Cashuru",
+      "name": "Fortunu And Cashuru",
+      "income": 130000000
+    },
+    {
+      "id": "Foxini_Lanternini",
+      "name": "Foxini Lanternini",
+      "income": 115000000
+    },
+    {
+      "id": "Fragola_La_La_La",
+      "name": "Fragola Lala",
+      "income": 32500000
+    },
+    {
+      "id": "Fragrama_and_Chocrama",
+      "name": "Fragrama",
+      "income": 100000000
+    },
+    {
+      "id": "Frankentteo",
+      "name": "Frankentteo",
+      "income": 700000
+    },
+    {
+      "id": "Frigo_Camelo",
+      "name": "Frigo Camelo",
+      "income": 2000
+    },
+    {
+      "id": "Frio_Ninja",
+      "name": "Frioninja",
+      "income": 265000
+    },
+    {
+      "id": "Frogato_Pirato",
+      "name": "Frogato Pirato",
+      "income": 240
+    },
+    {
+      "id": "Frogo_Elfo",
+      "name": "Frogo Elfo",
+      "income": 67
+    },
+    {
+      "id": "Futbolini_Skatini",
+      "name": "Futbolini Skatini",
+      "income": 4500000
+    },
+    {
+      "id": "Ganganzelli_Trulala",
+      "name": "Ganganzelli Trulala",
+      "income": 9000
+    },
+    {
+      "id": "Gangster_Footera",
+      "name": "Gangster Footera",
+      "income": 30
+    },
+    {
+      "id": "Garama_and_Madundung",
+      "name": "Garama and Madundung",
+      "income": 50000000
+    },
+    {
+      "id": "Gato_Celesto",
+      "name": "Gato Celestowebp",
+      "income": 250
+    },
+    {
+      "id": "Gattatino_Neonino",
+      "name": "Gattatin",
+      "income": 35000
+    },
+    {
+      "id": "Gattatino_Nyanino",
+      "name": "Gattatino Nyanino",
+      "income": 35000
+    },
+    {
+      "id": "Gattito_Tacoto",
+      "name": "Gattito Tacoto",
+      "income": 165000
+    },
+    {
+      "id": "Giftini_Spyderini",
+      "name": "Giftini Spyderini",
+      "income": 999900
+    },
+    {
+      "id": "Ginger_Cisterna",
+      "name": "Ginger Cisterna",
+      "income": 293500
+    },
+    {
+      "id": "Ginger_Gerat",
+      "name": "Ginger Gerat",
+      "income": 75000000
+    },
+    {
+      "id": "Ginger_Globo",
+      "name": "Ginger Globo",
+      "income": 257500
+    },
+    {
+      "id": "Girafa_Celestre",
+      "name": "Girafa Celestre",
+      "income": 20000
+    },
+    {
+      "id": "Glaciator",
+      "name": "Glaciator",
+      "income": 2300000
+    },
+    {
+      "id": "Globa_Steppa",
+      "name": "Globa Steppa",
+      "income": 27500000
+    },
+    {
+      "id": "Glorbo_Fruttodrillo",
+      "name": "Glorbofruttodrillo",
+      "income": 750
+    },
+    {
+      "id": "Goat",
+      "name": "Goat",
+      "income": 950000
+    },
+    {
+      "id": "GOAT",
+      "name": "GOAT",
+      "income": 950000
+    },
+    {
+      "id": "Gobblino_Uniciclino",
+      "name": "Gobblino Uniciclino",
+      "income": 27500000
+    },
+    {
+      "id": "Gold_Gold_Gold",
+      "name": "Gold Gold Gold",
+      "income": 45000000
+    },
+    {
+      "id": "Gorillo_Subwoofero",
+      "name": "Gorillo Subwoofero",
+      "income": 7700
+    },
+    {
+      "id": "Gorillo_Watermelondrillo",
+      "name": "Gorillo Watermelondrillo",
+      "income": 8000
+    },
+    {
+      "id": "Graipuss_Medussi",
+      "name": "Graipuss",
+      "income": 1000000
+    },
+    {
+      "id": "Granchiello_Spiritell",
+      "name": "Granchiello Spiritell",
+      "income": 260000
+    },
+    {
+      "id": "Granny",
+      "name": "Granny",
+      "income": 4000000
+    },
+    {
+      "id": "Griffin",
+      "name": "Griffin",
+      "income": 400000000
+    },
+    {
+      "id": "Guerriro_Digitale",
+      "name": "Guerrirodigitale",
+      "income": 550000
+    },
+    {
+      "id": "Guest_666",
+      "name": "Guest666t",
+      "income": 66660000
+    },
+    {
+      "id": "Gym_Bros",
+      "name": "Gym Bros",
+      "income": 42500000
+    },
+    {
+      "id": "Harpuccino",
+      "name": "Harpuccino",
+      "income": 14000
+    },
+    {
+      "id": "Headless_Horseman",
+      "name": "Headlesshorseman",
+      "income": 550000000
+    },
+    {
+      "id": "Ho_Ho_Ho_Sahur",
+      "name": "Hohohosahur",
+      "income": 3250000
+    },
+    {
+      "id": "Holy_Arepa",
+      "name": "Holy Arepa",
+      "income": 15
+    },
+    {
+      "id": "Hopilikalika_Hopilikalako",
+      "name": "Hopilikalika Hopilikalako",
+      "income": 55000000
+    },
+    {
+      "id": "Horegini_Boom",
+      "name": "Horegini Boom",
+      "income": 2750000
+    },
+    {
+      "id": "Hydra_Bunny",
+      "name": "Hydra Bunny",
+      "income": 185000000
+    },
+    {
+      "id": "Hydra_Dragon_Cannelloni",
+      "name": "Hydra Dragon Cannelloni",
+      "income": 300000000
+    },
+    {
+      "id": "Jacko_Jack_Jack",
+      "name": "Jacko Jack Jack",
+      "income": 150000
+    },
+    {
+      "id": "Jacko_Spaventosa",
+      "name": "Jacko Spaventosa",
+      "income": 16200
+    },
+    {
+      "id": "Jackorilla",
+      "name": "Jackorilla",
+      "income": 315000
+    },
+    {
+      "id": "Jelly_Moby",
+      "name": "Jelly Moby",
+      "income": 175000000
+    },
+    {
+      "id": "Jingle_Jingle_Sahur",
+      "name": "Jinglejinglesahur",
+      "income": 12200
+    },
+    {
+      "id": "Job_Job_Job_Sahur",
+      "name": "Job",
+      "income": 700000
+    },
+    {
+      "id": "John_Doe",
+      "name": "John Doe",
+      "income": 7500000
+    },
+    {
+      "id": "John_Pork",
+      "name": "John Pork",
+      "income": 500000000
+    },
+    {
+      "id": "Jolly_Jolly_Sahur",
+      "name": "Jolly Jolly Sahur",
+      "income": 45000000
+    },
+    {
+      "id": "Kalika_Bros",
+      "name": "Kalika Bros",
+      "income": 115000000
+    },
+    {
+      "id": "Karker_Sahur",
+      "name": "Karker Sahur",
+      "income": 725000
+    },
+    {
+      "id": "Karkerheart_Luvkur",
+      "name": "Karkerheart Luvkur",
+      "income": 297500
+    },
+    {
+      "id": "Karkerkar_Kurkur",
+      "name": "Karkerkar Kurkur",
+      "income": 325000
+    },
+    {
+      "id": "Ketchuru_and_Musturu",
+      "name": "Ketchuru",
+      "income": 42500000
+    },
+    {
+      "id": "Ketupat_Bros",
+      "name": "Ketupat Bros",
+      "income": 145000000
+    },
+    {
+      "id": "Ketupat_Kepat",
+      "name": "Ketupatkepat",
+      "income": 35000000
+    },
+    {
+      "id": "Krupuk_Pagi_Pagi",
+      "name": "Krupuk Pagi Pagi",
+      "income": 290000
+    },
+    {
+      "id": "La_Anniversary_Grande",
+      "name": "La Anniversary Grande",
+      "income": 50000000
+    },
+    {
+      "id": "La_Casa_Boo",
+      "name": "La Casa Boo",
+      "income": 100000000
+    },
+    {
+      "id": "La_Cucaracha",
+      "name": "La Cucaracha",
+      "income": 475000
+    },
+    {
+      "id": "La_Easter_Grande",
+      "name": "La Easter Grande",
+      "income": 55000000
+    },
+    {
+      "id": "La_Extinct_Grande",
+      "name": "La Extinct Grande",
+      "income": 23500000
+    },
+    {
+      "id": "La_Food_Combinasion",
+      "name": "La Food Combinasion",
+      "income": 90000000
+    },
+    {
+      "id": "La_Ginger_Sekolah",
+      "name": "La Ginger Sekolah",
+      "income": 75000000
+    },
+    {
+      "id": "La_Grande_Combinasion",
+      "name": "La Grande Combinasion",
+      "income": 10000000
+    },
+    {
+      "id": "La_Jolly_Grande",
+      "name": "La Jolly Grande",
+      "income": 30000000
+    },
+    {
+      "id": "La_Karkerkar_Combinasion",
+      "name": "La Karkerkar Combinasion",
+      "income": 600000
+    },
+    {
+      "id": "La_Lucky_Grande",
+      "name": "La Lucky Grande",
+      "income": 40000000
+    },
+    {
+      "id": "La_Romantic_Grande",
+      "name": "La Romantic Grande",
+      "income": 40000000
+    },
+    {
+      "id": "La_Sahur_Combinasion",
+      "name": "La Sahur Combinasion",
+      "income": 2000000
+    },
+    {
+      "id": "La_Spooky_Grande",
+      "name": "La Spooky Grande",
+      "income": 24500000
+    },
+    {
+      "id": "La_Supreme_Combinasion",
+      "name": "La Supreme Combinasion",
+      "income": 200000000
+    },
+    {
+      "id": "La_Taco_Combinasion",
+      "name": "La Taco Combinasion",
+      "income": 35000000
+    },
+    {
+      "id": "La_Vacca_Jacko_Linterino",
+      "name": "La Vacca Jacko Linterino",
+      "income": 850000
+    },
+    {
+      "id": "La_Vacca_Lepre_Lepreino",
+      "name": "La Vacca Lepre Lepreino",
+      "income": 1100000
+    },
+    {
+      "id": "La_Vacca_Prese_Presente",
+      "name": "La Vacca Prese Presente",
+      "income": 600000
+    },
+    {
+      "id": "La_Vacca_Saturno_Saturnita",
+      "name": "La Vacca Saturno Saturnita",
+      "income": 325000
+    },
+    {
+      "id": "Las_Cappuchinas",
+      "name": "Las Cappuchinas",
+      "income": 185000
+    },
+    {
+      "id": "Las_Capuchinas",
+      "name": "Las Capuchinas",
+      "income": 185000
+    },
+    {
+      "id": "Las_Sis",
+      "name": "Las Sis",
+      "income": 17500000
+    },
+    {
+      "id": "Las_Vaquitas_Saturnitas",
+      "name": "Las Vaquitas Saturnitas",
+      "income": 750000
+    },
+    {
+      "id": "La_Secret_Combinasion",
+      "name": "Lasecretcombinasion",
+      "income": 125000000
+    },
+    {
+      "id": "Las_Tralaleritas",
+      "name": "Lastralaleritas",
+      "income": 650000
+    },
+    {
+      "id": "Lavadorito_Spinito",
+      "name": "Lavadorito Spinito",
+      "income": 45000000
+    },
+    {
+      "id": "Lazy_Ducky",
+      "name": "Lazyducky",
+      "income": 255000
+    },
+    {
+      "id": "Lerulerulerule",
+      "name": "Lerulerulerule",
+      "income": 8700
+    },
+    {
+      "id": "Lionel_Cactuseli",
+      "name": "Lionel Cactuseli",
+      "income": 650
+    },
+    {
+      "id": "Lirilì_Larilà",
+      "name": "Lirilì Larilà",
+      "income": 3
+    },
+    {
+      "id": "List_List_List_Sahur",
+      "name": "List List List Sahur",
+      "income": 2000000
+    },
+    {
+      "id": "Los_25",
+      "name": "Los 25",
+      "income": 10000000
+    },
+    {
+      "id": "Los_67",
+      "name": "Los 67 Brainrot",
+      "income": 22500000
+    },
+    {
+      "id": "Los_Amigos",
+      "name": "Los Amigos",
+      "income": 130000000
+    },
+    {
+      "id": "Los_Bombinitos",
+      "name": "Los Bombinitos",
+      "income": 220000
+    },
+    {
+      "id": "Los_Bros",
+      "name": "Los Bros",
+      "income": 24000000
+    },
+    {
+      "id": "Los_Bunitos",
+      "name": "Los Bunitos",
+      "income": 4250000
+    },
+    {
+      "id": "Los_Burritos",
+      "name": "Los Burritos",
+      "income": 8500000
+    },
+    {
+      "id": "Los_Candies",
+      "name": "Los Candies",
+      "income": 23000000
+    },
+    {
+      "id": "Los_Chicleteiras",
+      "name": "Los Chicleteiras",
+      "income": 7000000
+    },
+    {
+      "id": "Los_Chihuaninis",
+      "name": "Los Chihuaninis",
+      "income": 160000
+    },
+    {
+      "id": "Los_Chillis",
+      "name": "Los Chillis",
+      "income": 75000000
+    },
+    {
+      "id": "Los_Combinasionas",
+      "name": "Los Combinasionas",
+      "income": 15000000
+    },
+    {
+      "id": "Los_Cucarachas",
+      "name": "Los Cucarachas",
+      "income": 1200000
+    },
+    {
+      "id": "Los_Cupids",
+      "name": "Los Cupids",
+      "income": 30000000
+    },
+    {
+      "id": "Los_Gattitos",
+      "name": "Los Gattitos",
+      "income": 275000
+    },
+    {
+      "id": "Los_Hackers",
+      "name": "Los Hackers",
+      "income": 75000000
+    },
+    {
+      "id": "Los_Jolly_Combinasionas",
+      "name": "Los Jolly Combinasionas",
+      "income": 20000000
+    },
+    {
+      "id": "Los_Mariachis",
+      "name": "Los Mariachis",
+      "income": 30000000
+    },
+    {
+      "id": "Los_Mi_Gatitos",
+      "name": "Los Mi Gatitos",
+      "income": 6500000
+    },
+    {
+      "id": "Los_Mobilis",
+      "name": "Los Mobilis",
+      "income": 22000000
+    },
+    {
+      "id": "Los_Noobinis",
+      "name": "Los Noobinis",
+      "income": 12500
+    },
+    {
+      "id": "Los_Nooo_My_Hotspotsitos",
+      "name": "Los Nooo My Hotspotsitos",
+      "income": 5500000
+    },
+    {
+      "id": "Los_Orcalitos",
+      "name": "Los Orcalitos",
+      "income": 235000
+    },
+    {
+      "id": "Los_Planitos",
+      "name": "Los Planitos",
+      "income": 18500000
+    },
+    {
+      "id": "Los_Primos",
+      "name": "Los Primos",
+      "income": 31000000
+    },
+    {
+      "id": "Los_Puggies",
+      "name": "Los Puggies",
+      "income": 30000000
+    },
+    {
+      "id": "Los_Sekolahs",
+      "name": "Los Sekolahs",
+      "income": 110000000
+    },
+    {
+      "id": "Los_Spaghettis",
+      "name": "Los Spaghettis",
+      "income": 70000000
+    },
+    {
+      "id": "Los_Spooky_Combinasionas",
+      "name": "Los Spooky Combinasionas",
+      "income": 20000000
+    },
+    {
+      "id": "Los_Spyderinis",
+      "name": "Los Spyderinis",
+      "income": 425000
+    },
+    {
+      "id": "Los_Sweethearts",
+      "name": "Los Sweethearts",
+      "income": 16500000
+    },
+    {
+      "id": "Los_Tacoritas",
+      "name": "Los Tacoritas",
+      "income": 32000000
+    },
+    {
+      "id": "Los_Tipi_Tacos",
+      "name": "Los Tipi Tacos",
+      "income": 260000
+    },
+    {
+      "id": "Los_Tralaleritos",
+      "name": "Los Tralaleritos",
+      "income": 500000
+    },
+    {
+      "id": "Los_Trios",
+      "name": "Los Trios",
+      "income": 700000
+    },
+    {
+      "id": "Los_Tungtungtungcitos",
+      "name": "Los Tungtungtungcitos",
+      "income": 210000
+    },
+    {
+      "id": "Los_Crocodillitos",
+      "name": "Loscrocodillitos",
+      "income": 55000
+    },
+    {
+      "id": "Los_Hotspotsitos",
+      "name": "Loshotspotsitos",
+      "income": 20000000
+    },
+    {
+      "id": "Los_Jobcitos",
+      "name": "Losjobcitos",
+      "income": 1500000
+    },
+    {
+      "id": "Los_Karkeritos",
+      "name": "Loskarkeritos",
+      "income": 750000
+    },
+    {
+      "id": "Los_Matteos",
+      "name": "Losmatteos",
+      "income": 325000
+    },
+    {
+      "id": "Los_Quesadillas",
+      "name": "Losquesadillas",
+      "income": 4500000
+    },
+    {
+      "id": "Los_Tortus",
+      "name": "Lostortuss",
+      "income": 500000
+    },
+    {
+      "id": "Love_Love_Bear",
+      "name": "Love Love Bear",
+      "income": 225000000
+    },
+    {
+      "id": "Love_Love_Love_Sahur",
+      "name": "Love Love Love Sahur",
+      "income": 1000000
+    },
+    {
+      "id": "Lovin_Rose",
+      "name": "Lovin Rose",
+      "income": 32500000
+    },
+    {
+      "id": "Luck_Luck_Luck_Sahur",
+      "name": "Luck Luck Luck Sahur",
+      "income": 3750000
+    },
+    {
+      "id": "Lumaca_Malefica",
+      "name": "Lumaca Malefica",
+      "income": 265000
+    },
+    {
+      "id": "Luv_Luv_Luv",
+      "name": "Luvluvluv",
+      "income": 282500
+    },
+    {
+      "id": "Magi_Ribbitini",
+      "name": "Magiribbit",
+      "income": 11500
+    },
+    {
+      "id": "Malame_Amarele",
+      "name": "Malameamarele",
+      "income": 140
+    },
+    {
+      "id": "Mangolini_Parrocini",
+      "name": "Mangolini Parrocini",
+      "income": 235
+    },
+    {
+      "id": "Mariachi_Corazoni",
+      "name": "Mariachicora",
+      "income": 12500000
+    },
+    {
+      "id": "Mastodontico_Telepiedone",
+      "name": "Mastodontico Telepiedone",
+      "income": 275000
+    },
+    {
+      "id": "Matteo",
+      "name": "Matteofr",
+      "income": 50000
+    },
+    {
+      "id": "Meowl",
+      "name": "Meowl",
+      "income": 600000000
+    },
+    {
+      "id": "Mi_Gatito",
+      "name": "Mi Gatito",
+      "income": 3250000
+    },
+    {
+      "id": "Mieteteira_Bicicleteira",
+      "name": "Mieteteira Bicicleteira",
+      "income": 26000000
+    },
+    {
+      "id": "Money_Money_Bros",
+      "name": "Money Money Bros",
+      "income": 47000000
+    },
+    {
+      "id": "Money_Money_Man",
+      "name": "Money Money Man",
+      "income": 65000
+    },
+    {
+      "id": "Money_Money_Puggy",
+      "name": "Money Money Puggy",
+      "income": 21000000
+    },
+    {
+      "id": "Money_Money_Reindeer",
+      "name": "Money Money Reindeer",
+      "income": 25000000
+    },
+    {
+      "id": "Mummio_Rappitto",
+      "name": "Mummio Rappitto",
+      "income": 325
+    },
+    {
+      "id": "Mummy_Ambalabu",
+      "name": "Mummy Ambalabu",
+      "income": 250000
+    },
+    {
+      "id": "Nacho_Spyder",
+      "name": "Nacho Spyder",
+      "income": 50000000
+    },
+    {
+      "id": "Naughty_Naughty",
+      "name": "Naughty Naughty",
+      "income": 3000000
+    },
+    {
+      "id": "Noo_La_Polizia",
+      "name": "Noo La Polizia",
+      "income": 280000
+    },
+    {
+      "id": "Noo_my_Candy",
+      "name": "Noo My Candy Transparent",
+      "income": 5000000
+    },
+    {
+      "id": "Noo_my_Eggs",
+      "name": "Noo My Eggs",
+      "income": 7000000
+    },
+    {
+      "id": "Noo_my_examine",
+      "name": "Noo my examine",
+      "income": 1700000
+    },
+    {
+      "id": "Noo_my_Gold",
+      "name": "Noo My Gold",
+      "income": 13500000
+    },
+    {
+      "id": "Noo_my_Heart",
+      "name": "Noo My Heart",
+      "income": 13000000
+    },
+    {
+      "id": "Noo_my_Present",
+      "name": "Noo My Present",
+      "income": 6000000
+    },
+    {
+      "id": "Noobini_Pizzanini",
+      "name": "Noobini Pizzanini",
+      "income": 1
+    },
+    {
+      "id": "Noobini_Santanini",
+      "name": "Noobinis",
+      "income": 11
+    },
+    {
+      "id": "Nooo_My_Hotspot",
+      "name": "Nooo My Hotspot",
+      "income": 1500000
+    },
+    {
+      "id": "Nuclearo_Dinossauro",
+      "name": "Nuclearo Dinossauro",
+      "income": 15000000
+    },
+    {
+      "id": "Odin_Din_Din_Dun",
+      "name": "Odin Din Din Dun",
+      "income": 75000
+    },
+    {
+      "id": "Orangutini_Ananassini",
+      "name": "Orangutini Ananassini",
+      "income": 2100
+    },
+    {
+      "id": "Orbi_Mochi",
+      "name": "Orbi Mochi",
+      "income": 18500
+    },
+    {
+      "id": "Orcaledon",
+      "name": "Orcaledon",
+      "income": 40000000
+    },
+    {
+      "id": "Orcalero_Orcala",
+      "name": "Orcalero Orcala",
+      "income": 100000
+    },
+    {
+      "id": "Orcalita_Orcala",
+      "name": "Orcalita Orcala",
+      "income": 240000
+    },
+    {
+      "id": "Pakrahmatmamat",
+      "name": "Pakrahmatmamat",
+      "income": 215000
+    },
+    {
+      "id": "Pakrahmatmatina",
+      "name": "Pakrahmatmatina",
+      "income": 225000
+    },
+    {
+      "id": "Pancake_and_Syrup",
+      "name": "Pancake And Syrup",
+      "income": 125000000
+    },
+    {
+      "id": "Pandaccini_Bananini",
+      "name": "Pandaccini Bananini",
+      "income": 1250
+    },
+    {
+      "id": "Pandanini_Frostini",
+      "name": "Pandanini Frostini",
+      "income": 294000
+    },
+    {
+      "id": "Paradiso_Axolottino",
+      "name": "Paradiso Axolottino",
+      "income": 900000
+    },
+    {
+      "id": "Patteo",
+      "name": "Patteo",
+      "income": 287500
+    },
+    {
+      "id": "Pengolino_Nuvoletto",
+      "name": "Pengolino Nuvoletto",
+      "income": 72
+    },
+    {
+      "id": "Penguino_Cocosino",
+      "name": "Penguino Cocosino",
+      "income": 300
+    },
+    {
+      "id": "Penguin_Tree",
+      "name": "Penguintree",
+      "income": 270
+    },
+    {
+      "id": "Perochello_Lemonchello",
+      "name": "Perochello Lemonchello",
+      "income": 160
+    },
+    {
+      "id": "Perrito_Burrito",
+      "name": "Perrito Burrito",
+      "income": 1000000
+    },
+    {
+      "id": "Pi_Pi_Watermelon",
+      "name": "Pi Pi Watermelon",
+      "income": 1300
+    },
+    {
+      "id": "Piccione_Macchina",
+      "name": "Piccione Macchina",
+      "income": 225000
+    },
+    {
+      "id": "Piccionetta_Machina",
+      "name": "Piccionetta Machina",
+      "income": 270000
+    },
+    {
+      "id": "Pinealotto_Fruttarino",
+      "name": "Pinealotto Fruttarino",
+      "income": 75
+    },
+    {
+      "id": "Pineaplino",
+      "name": "Pineaplino",
+      "income": 200000
+    },
+    {
+      "id": "Pipi_Avocado",
+      "name": "Pipi Avocado",
+      "income": 70
+    },
+    {
+      "id": "Pipi_Corni",
+      "name": "Pipi Corni",
+      "income": 14
+    },
+    {
+      "id": "Pipi_Kiwi",
+      "name": "Pipi Kiwi",
+      "income": 13
+    },
+    {
+      "id": "Pipi_Potato",
+      "name": "Pipi Potato",
+      "income": 1100
+    },
+    {
+      "id": "Pirulitoita_Bicicleteira",
+      "name": "Pirulitoita Bicicleteira",
+      "income": 2500000
+    },
+    {
+      "id": "Please_my_Present",
+      "name": "Please My Present",
+      "income": 1300000
+    },
+    {
+      "id": "Popcuru_and_Fizzuru",
+      "name": "Popcuru and Fizzuru",
+      "income": 170000000
+    },
+    {
+      "id": "Pop_Pop_Sahur",
+      "name": "Poppopsahur",
+      "income": 295000
+    },
+    {
+      "id": "Pot_Hotspot",
+      "name": "Pot Hotspot",
+      "income": 2500000
+    },
+    {
+      "id": "Pot_Pumpkin",
+      "name": "Pot Pumpkin",
+      "income": 3000000
+    },
+    {
+      "id": "Pretzo_Robo",
+      "name": "Pretzo Robo",
+      "income": 320000
+    },
+    {
+      "id": "Puffaball",
+      "name": "Puffaball",
+      "income": 1500
+    },
+    {
+      "id": "Pumpkini_Spyderini",
+      "name": "Pumpkini Spyderini",
+      "income": 650000
+    },
+    {
+      "id": "Quackini_Snackini",
+      "name": "Quackini Snackini",
+      "income": 65000000
+    },
+    {
+      "id": "Quackula",
+      "name": "Quackula",
+      "income": 1200
+    },
+    {
+      "id": "Quesadilla_Crocodila",
+      "name": "Quesadilla Crocodila",
+      "income": 3000000
+    },
+    {
+      "id": "Quesadillo_Vampiro",
+      "name": "Quesadillo Vampiro",
+      "income": 3500000
+    },
+    {
+      "id": "Quivioli_Ameleonni",
+      "name": "Quivioli Ameleonni",
+      "income": 900
+    },
+    {
+      "id": "Raccooni_Jandelini",
+      "name": "Raccooni",
+      "income": 12
+    },
+    {
+      "id": "Rang_Ring_Bus",
+      "name": "Rang Ring Bus",
+      "income": 6000000
+    },
+    {
+      "id": "Reindeer_Tralala",
+      "name": "Reindeer Tralala",
+      "income": 600000
+    },
+    {
+      "id": "Reinito_Sleighito",
+      "name": "Reinito Sleighito",
+      "income": 140000000
+    },
+    {
+      "id": "Rhino_Helicopterino",
+      "name": "Rhino Helicopterino",
+      "income": 11000
+    },
+    {
+      "id": "Rhino_Toasterino",
+      "name": "Rhino Toasterino",
+      "income": 2150
+    },
+    {
+      "id": "Rico_Dinero",
+      "name": "Rico Dinero",
+      "income": 42500000
+    },
+    {
+      "id": "Robo_Grafito",
+      "name": "Robo Grafito",
+      "income": 317500
+    },
+    {
+      "id": "Rocco_Disco",
+      "name": "Rocco Disco",
+      "income": 650000
+    },
+    {
+      "id": "Rosetti_Tualetti",
+      "name": "Rosetti Tualetti",
+      "income": 50000000
+    },
+    {
+      "id": "Rosey_and_Teddy",
+      "name": "Rosey And Teddy",
+      "income": 165000000
+    },
+    {
+      "id": "Rubrikiko",
+      "name": "Rubrikiko",
+      "income": 70000000
+    },
+    {
+      "id": "Salamino_Penguino",
+      "name": "Salamino Penguino",
+      "income": 250
+    },
+    {
+      "id": "Sammyni_Cakini",
+      "name": "Sammyni Cakini",
+      "income": 85000000
+    },
+    {
+      "id": "Sammyni_Fattini",
+      "name": "Sammyni Fattini",
+      "income": 70000000
+    },
+    {
+      "id": "Sammyni_Spyderini",
+      "name": "Sammyni Spyderini",
+      "income": 325000
+    },
+    {
+      "id": "Santa_Hotspot",
+      "name": "Santa Hotspot",
+      "income": 2600000
+    },
+    {
+      "id": "Santteo",
+      "name": "Santteo",
+      "income": 800000
+    },
+    {
+      "id": "Sealo_Regalo",
+      "name": "Sealo Regalo",
+      "income": 1800
+    },
+    {
+      "id": "Serafinna_Medusella",
+      "name": "Serafinna Medusella",
+      "income": 5500000
+    },
+    {
+      "id": "Seraphino_Gruyero",
+      "name": "Seraphino Gruyero",
+      "income": 1900
+    },
+    {
+      "id": "Sigma_Boy",
+      "name": "Sig Ma Boy",
+      "income": 1350
+    },
+    {
+      "id": "Sigma_Girl",
+      "name": "Sigmagirl",
+      "income": 1800
+    },
+    {
+      "id": "Signore_Carapace",
+      "name": "Signore Carapace",
+      "income": 275000000
+    },
+    {
+      "id": "Skibidi_Toilet",
+      "name": "Skibidi Toilet",
+      "income": 450000000
+    },
+    {
+      "id": "Skull_Skull_Skull",
+      "name": "Skull Skull Skull",
+      "income": 290000
+    },
+    {
+      "id": "Snailenzo",
+      "name": "Snailenzo",
+      "income": 250000
+    },
+    {
+      "id": "Snailo_Clovero",
+      "name": "Snailo Clovero",
+      "income": 18500000
+    },
+    {
+      "id": "Spaghetti_Tualetti",
+      "name": "Spaghettitualetti",
+      "income": 60000000
+    },
+    {
+      "id": "Spinny_Hammy",
+      "name": "Spinny Hammy",
+      "income": 17000000
+    },
+    {
+      "id": "Spioniro_Golubiro",
+      "name": "Spioniro Golubiro",
+      "income": 3500
+    },
+    {
+      "id": "Spongini_Quackini",
+      "name": "Spongini Quackini",
+      "income": 13000
+    },
+    {
+      "id": "Spooky_and_Pumpky",
+      "name": "Spooky and Pumpky",
+      "income": 80000000
+    },
+    {
+      "id": "Spyder_Elephant",
+      "name": "Spyder Elephant",
+      "income": 1000000000
+    },
+    {
+      "id": "Squalanana",
+      "name": "Squalanana",
+      "income": 250000
+    },
+    {
+      "id": "Statutino_Libertino",
+      "name": "Statutinolibertino",
+      "income": 75000
+    },
+    {
+      "id": "Stoppo_Luminino",
+      "name": "Stoppo Luminino",
+      "income": 8000
+    },
+    {
+      "id": "Strawberrelli_Flamingelli",
+      "name": "Strawberrelli Flamingelli",
+      "income": 1150
+    },
+    {
+      "id": "Strawberrita",
+      "name": "Strawberrita",
+      "income": 6500000
+    },
+    {
+      "id": "Strawberry_Elephant",
+      "name": "Strawberry Elephant",
+      "income": 750000000
+    },
+    {
+      "id": "Svinina_Bombardino",
+      "name": "Svinina Bombardino",
+      "income": 10
+    },
+    {
+      "id": "Swag_Soda",
+      "name": "Swag Soda",
+      "income": 13000000
+    },
+    {
+      "id": "Swaggy_Bros",
+      "name": "Swaggy Bros",
+      "income": 40000000
+    },
+    {
+      "id": "Ta_Ta_Ta_Ta_Sahur",
+      "name": "Ta Ta Ta Ta Sahur",
+      "income": 55
+    },
+    {
+      "id": "Tacorillo_Crocodillo",
+      "name": "Tacorillo Crocodillo",
+      "income": 12500000
+    },
+    {
+      "id": "Tacorita_Bicicleta",
+      "name": "Tacorita Bicicleta",
+      "income": 16500000
+    },
+    {
+      "id": "Talpa_Di_Fero",
+      "name": "Talpa Di Fero",
+      "income": 9
+    },
+    {
+      "id": "Tang_Tang_Keletang",
+      "name": "Tangtang",
+      "income": 33500000
+    },
+    {
+      "id": "Tartaragno",
+      "name": "Tartaragnoo",
+      "income": 13
+    },
+    {
+      "id": "Tartaruga_Cisterna",
+      "name": "Tartaruga Cisternaaaa",
+      "income": 250000
+    },
+    {
+      "id": "Te_Te_Te_Sahur",
+      "name": "Te Te Te Sahur",
+      "income": 9500
+    },
+    {
+      "id": "Telemorte",
+      "name": "Telemorte",
+      "income": 2000000
+    },
+    {
+      "id": "Tenini_Ballini",
+      "name": "Tenini Ballini",
+      "income": 300000
+    },
+    {
+      "id": "Tentacolo_Tecnico",
+      "name": "Tentacolo Tecnico",
+      "income": 292500
+    },
+    {
+      "id": "Tictac_Sahur",
+      "name": "Tictac Sahur",
+      "income": 37500000
+    },
+    {
+      "id": "Tigrilini_Watermelini",
+      "name": "Tigrilini Watermelini1",
+      "income": 6500
+    },
+    {
+      "id": "Tigroligre_Frutonni",
+      "name": "Tigroligre",
+      "income": 60000
+    },
+    {
+      "id": "Tim_Cheese",
+      "name": "Tim Cheese",
+      "income": 5
+    },
+    {
+      "id": "Tipi_Topi_Taco",
+      "name": "Tipi Topi Taco",
+      "income": 75000
+    },
+    {
+      "id": "Tirilikalika_Tirilikalako",
+      "name": "Tirilikalikatirilikalakotransparent",
+      "income": 42500000
+    },
+    {
+      "id": "Ti_Ti_Ti_Sahur",
+      "name": "Tititi Sahur",
+      "income": 225
+    },
+    {
+      "id": "To_To_To_Sahur",
+      "name": "To To To Sahur",
+      "income": 2250000
+    },
+    {
+      "id": "To_to_to_Sahur",
+      "name": "To to to Sahur",
+      "income": 2250000
+    },
+    {
+      "id": "Tob_Tobi_Tobi",
+      "name": "Tob Tobi Tobi",
+      "income": 8500
+    },
+    {
+      "id": "Toiletto_Focaccino",
+      "name": "Toiletto",
+      "income": 16000
+    },
+    {
+      "id": "Tootini_Shrimpini",
+      "name": "Tootini Shrimpini",
+      "income": 260000
+    },
+    {
+      "id": "Torrtuginni_Dragonfrutini",
+      "name": "Torrtuginni Dragonfrutini",
+      "income": 350000
+    },
+    {
+      "id": "Tracoducotulu_Delapeladustuz",
+      "name": "Tracoducotulu",
+      "income": 12000
+    },
+    {
+      "id": "Tractoro_Dinosauro",
+      "name": "Tractoro Dinosauro",
+      "income": 230000
+    },
+    {
+      "id": "Tralaledon",
+      "name": "Tralaledon",
+      "income": 27500000
+    },
+    {
+      "id": "Tralalero_Tralala",
+      "name": "Tralalerotralala",
+      "income": 50000
+    },
+    {
+      "id": "Tralalita_Tralala",
+      "name": "Tralalita",
+      "income": 100000
+    },
+    {
+      "id": "Tree_Tree_Tree_Sahur",
+      "name": "Treetreetreesahur",
+      "income": 17000
+    },
+    {
+      "id": "Trenostruzzo_Turbo_3000",
+      "name": "Trenostruzzo Turbo 3000",
+      "income": 150000
+    },
+    {
+      "id": "Trenostruzzo_Turbo_4000",
+      "name": "Trenostruzzo Turbo 4000",
+      "income": 335000
+    },
+    {
+      "id": "Trenotubo_Axolotrico_9000",
+      "name": "Trenotubo Axolotrico 9000",
+      "income": 255000
+    },
+    {
+      "id": "Tric_Trac_Baraboom",
+      "name": "Tric Trac Baraboom 5",
+      "income": 65
+    },
+    {
+      "id": "Trickolino",
+      "name": "Trickolino",
+      "income": 900000
+    },
+    {
+      "id": "Triplito_Tralaleritos",
+      "name": "Triplito Tralaleritos",
+      "income": 875000
+    },
+    {
+      "id": "Trippi_Troppi",
+      "name": "Trippi Troppi",
+      "income": 15
+    },
+    {
+      "id": "Trippi_Troppi_Troppa_Trippa",
+      "name": "Trippi Troppi Troppa Trippa",
+      "income": 175000
+    },
+    {
+      "id": "Trulimero_Trulicina",
+      "name": "Trulimero Trulicina",
+      "income": 125
+    },
+    {
+      "id": "Tuff_Toucan",
+      "name": "Tuff Toucan",
+      "income": 26000000
+    },
+    {
+      "id": "Tukanno_Bananno",
+      "name": "Tukanno Bananno",
+      "income": 100000
+    },
+    {
+      "id": "Tung_Tung_Tung_Sahur",
+      "name": "Tung Tung Tung Sahur",
+      "income": 1500000
+    },
+    {
+      "id": "Unclito_Samito",
+      "name": "Unclito Samito",
+      "income": 75000
+    },
+    {
+      "id": "Urubini_Flamenguini",
+      "name": "Urubini Flamenguini",
+      "income": 150000
+    },
+    {
+      "id": "Vampira_Cappucina",
+      "name": "Vampira Cappucina",
+      "income": 125000
+    },
+    {
+      "id": "Ventoliero_Pavonero",
+      "name": "Ventoliero Pavonero",
+      "income": 65000000
+    },
+    {
+      "id": "Vulturino_Skeletono",
+      "name": "Vulturino",
+      "income": 500000
+    },
+    {
+      "id": "W_or_L",
+      "name": "W or L",
+      "income": 30000000
+    },
+    {
+      "id": "Wheelchair_Granny",
+      "name": "Wheelchair Granny",
+      "income": 0
+    },
+    {
+      "id": "Wombo_Rollo",
+      "name": "Wombo",
+      "income": 275
+    },
+    {
+      "id": "Yess_my_examine",
+      "name": "Yessmyexamine",
+      "income": 575000
+    },
+    {
+      "id": "Yeti_Claus",
+      "name": "Yeti Claus",
+      "income": 257500
+    },
+    {
+      "id": "Zibra_Zubra_Zibralini",
+      "name": "Zibra Zubra Zibralini",
+      "income": 6000
+    },
+    {
+      "id": "Zombie_Tralala",
+      "name": "Zombietralala",
+      "income": 500000
+    }
+  ]
+}

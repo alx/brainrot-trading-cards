@@ -45,462 +45,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Press+Start+2P&family=Bungee&display=swap" rel="stylesheet" />
 
-<!-- Brainrots are loaded from static/images/brainrot/brainrots.json -->
+<!-- Brainrots are loaded from static/brainrots.json -->
 
-<style>
-  :root {
-    --ink: #0c0a08;
-    --cyan: #5ee8ff;
-    --cyan-deep: #0a7d99;
-    --green: #3acb3a;
-    --green-deep: #156b15;
-  }
-  * { box-sizing: border-box; }
-  html, body {
-    margin: 0; padding: 0;
-    font-family: 'Lilita One', system-ui, sans-serif;
-    background: #1a1410;
-    color: #fff;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+<link rel="stylesheet" href="static/css/style.css" />
 
-  body { padding-bottom: 24px; }
 
-  .page-col {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
-
-  /* ── Page chrome ─────────────────────────────────────────────────── */
-  .stage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 0px;
-  }
-
-  /* ── Editor panel (now full-width, below the card) ─────────────────────── */
-  .editor {
-    background: rgba(34, 25, 21, 0.96);
-    border: 2px solid #3a2a20;
-    border-radius: 12px;
-    padding: 18px;
-    font-family: 'Inter', system-ui, sans-serif;
-  }
-  .editor-header {
-    margin: 16px 0 8px;
-    padding: 0 4px;
-  }
-  .editor-header h2 {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 13px;
-    margin: 0 0 12px;
-    color: var(--cyan);
-    letter-spacing: 0.5px;
-  }
-  .editor-top {
-    display: flex;
-    align-items: end;
-    gap: 18px;
-    background: rgba(34, 25, 21, 0.96);
-    border: 2px solid #3a2a20;
-    border-radius: 12px;
-    padding: 12px 16px;
-    flex-wrap: wrap;
-  }
-  .editor-top .field { margin: 0; }
-  .editor-top .field-grow { flex: 1; min-width: 200px; }
-  .editor-top .btn-row { display: flex; gap: 8px; }
-  .editor-top .btn-row .btn {
-    margin: 0;
-    padding: 9px 16px;
-    font-size: 13px;
-    width: auto;
-    white-space: nowrap;
-  }
-  .editor-top .share-box {
-    margin-top: 4px;
-    max-height: 38px;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-
-  .editor-sides {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-  }
-  @media (max-width: 800px) {
-    .editor-top { flex-direction: column; align-items: stretch; }
-    .editor-sides { grid-template-columns: 1fr; }
-    .editor-top .share-box { white-space: normal; max-height: 80px; overflow: auto; }
-  }
-
-  /* Side editor sections */
-  .side-edit {
-    background: rgba(255,255,255,0.025);
-    border: 1px solid #3a2a20;
-    border-radius: 10px;
-    padding: 12px;
-    margin: 14px 0;
-  }
-  .side-edit-head {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 9px;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-    display: block;
-  }
-
-  /* Autocomplete */
-  .ac-wrap { position: relative; }
-  .ac-input {
-    width: 100%;
-    background: #110c08;
-    border: 1px solid #3a2a20;
-    color: #fff;
-    padding: 8px 10px;
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 13px;
-  }
-  .ac-input:focus { outline: none; border-color: var(--cyan); }
-  .ac-list {
-    position: absolute;
-    top: 100%;
-    left: 0; right: 0;
-    background: #1a120e;
-    border: 1px solid #3a2a20;
-    border-radius: 6px;
-    margin-top: 4px;
-    max-height: 260px;
-    overflow-y: auto;
-    z-index: 60;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
-    display: none;
-  }
-  .ac-list.open { display: block; }
-  .ac-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 8px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 12px;
-    border-bottom: 1px solid #2a1f18;
-  }
-  .ac-item:last-child { border-bottom: none; }
-  .ac-item:hover, .ac-item.active { background: #2a1f18; }
-  .ac-item .thumb {
-    width: 36px; height: 36px;
-    flex: 0 0 36px;
-    background: #2a1f18 center/cover no-repeat;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    color: #6a4f3e;
-    font-family: 'Press Start 2P', monospace;
-  }
-  .ac-item .name { flex: 1; line-height: 1.2; }
-  .editor h2 {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 12px;
-    margin: 0 0 14px;
-    color: var(--cyan);
-    letter-spacing: 0.5px;
-  }
-  .field { margin-bottom: 12px; }
-  .field label {
-    display: block;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: #b89c8a;
-    margin-bottom: 4px;
-    font-weight: 600;
-  }
-  .field input, .field select, .field textarea {
-    width: 100%;
-    background: #110c08;
-    border: 1px solid #3a2a20;
-    color: #fff;
-    padding: 8px 10px;
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 13px;
-  }
-  .field input:focus, .field select:focus, .field textarea:focus {
-    outline: none;
-    border-color: var(--cyan);
-  }
-  .row { display: grid; grid-template-columns: 70px 1fr; gap: 8px; }
-  .swatches {
-    display: flex; gap: 6px; flex-wrap: wrap;
-  }
-  .swatch {
-    width: 32px; height: 32px;
-    border-radius: 6px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: transform 0.1s;
-  }
-  .swatch:hover { transform: scale(1.1); }
-  .swatch.active { border-color: #fff; box-shadow: 0 0 0 2px var(--cyan); }
-  .btn {
-    width: 100%;
-    background: var(--cyan);
-    color: #002b35;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    font-family: 'Lilita One', sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-top: 8px;
-    transition: transform 0.1s;
-  }
-  .btn:hover { transform: translateY(-2px); }
-  .btn.secondary { background: #3a2a20; color: #fff; }
-  .help {
-    font-size: 11px;
-    color: #8a7060;
-    line-height: 1.4;
-    margin-top: 6px;
-    font-family: 'Inter', sans-serif;
-  }
-  .share-box {
-    background: #110c08;
-    border: 1px dashed var(--cyan-deep);
-    color: var(--cyan);
-    padding: 8px;
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: 10px;
-    word-break: break-all;
-    max-height: 60px;
-    overflow: auto;
-    margin-top: 6px;
-  }
-  /* (editor-toggle removed — editor is now always visible inline) */
-
-  /* ── Card ────────────────────────────────────────────────────────── */
-  .card-frame {
-    position: absolute;
-    top: 0; left: 0;
-    width: 1200px;
-    height: 800px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-    transform-origin: top left;
-  }
-  #card-wrap {
-    position: relative;
-    width: 1200px;
-    height: 800px;
-  }
-
-  /* themed backgrounds with sun-burst rays */
-  .bg-orange {
-    background:
-      radial-gradient(ellipse at center, #ffc049 0%, #ff8a1e 60%, #d96a0c 100%);
-  }
-  .bg-blue {
-    background:
-      radial-gradient(ellipse at center, #6fd9ff 0%, #2a8ad6 60%, #14538c 100%);
-  }
-  .bg-pink {
-    background:
-      radial-gradient(ellipse at center, #ff9ad6 0%, #ff3aa0 60%, #c0166e 100%);
-  }
-  .bg-purple {
-    background:
-      radial-gradient(ellipse at center, #c89aff 0%, #8a3ddf 60%, #4d1b89 100%);
-  }
-  .bg-green {
-    background:
-      radial-gradient(ellipse at center, #b9f068 0%, #5fb524 60%, #2d6e0a 100%);
-  }
-  .bg-red {
-    background:
-      radial-gradient(ellipse at center, #ff8a6a 0%, #e63a1a 60%, #8c1308 100%);
-  }
-
-  /* Sun rays overlay */
-  .rays {
-    position: absolute; inset: 0;
-    background: repeating-conic-gradient(
-      from 0deg at 50% 50%,
-      rgba(255,255,255,0.08) 0deg 10deg,
-      transparent 10deg 20deg
-    );
-    mix-blend-mode: overlay;
-    pointer-events: none;
-  }
-
-  /* Outlined text — we use inline SVG <text> with paint-order=stroke for
-     clean stroke+gradient rendering. The CSS below sizes the wrapper. */
-  .o-text-wrap {
-    display: block;
-    width: 100%;
-    line-height: 1;
-    filter: drop-shadow(0 8px 0 #0c0a08) drop-shadow(0 14px 18px rgba(0,0,0,0.6));
-  }
-  .o-text-wrap svg { display: block; width: 100%; overflow: visible; }
-
-  /* Title bar */
-  .card-title {
-    position: absolute;
-    top: 0; left: 24px; right: 24px;
-    text-align: center;
-    z-index: 3;
-    pointer-events: none;
-  }
-
-  /* Main two-column area */
-  .grid {
-    position: absolute;
-    top: 220px; bottom: 24px; left: 24px; right: 24px;
-    display: grid;
-    grid-template-columns: 1fr 100px 1fr;
-    gap: 16px;
-    align-items: start;
-  }
-
-  /* Each side */
-  .side {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    height: 100%;
-  }
-  .side-label {
-    text-align: center;
-    min-height: 80px;
-    padding: 0 4px;
-  }
-
-  /* Subtitle */
-  .subtitle {
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  /* Pixel framed image */
-  .pixel-frame {
-    flex: 1;
-    position: relative;
-    background: #0c0a08;
-    border-radius: 16px;
-    padding: 6px;
-    box-shadow:
-      0 0 0 6px #0c0a08,
-      0 0 0 10px var(--cyan),
-      0 0 0 16px #0c0a08,
-      0 12px 0 -2px rgba(0,0,0,0.4),
-      0 20px 30px rgba(0,0,0,0.5);
-  }
-  .pixel-frame-inner {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    background: radial-gradient(ellipse at center, #ffe089 0%, #ff9b1c 100%);
-  }
-  .pixel-frame-inner.fb-orange { background: radial-gradient(ellipse at center, #ffe089 0%, #ff9b1c 100%); }
-  .pixel-frame-inner.fb-blue   { background: radial-gradient(ellipse at center, #7adfff 0%, #1f6db8 100%); }
-  .pixel-frame-inner.fb-pink   { background: radial-gradient(ellipse at center, #ffaadc 0%, #c91a82 100%); }
-  .pixel-frame-inner.fb-purple { background: radial-gradient(ellipse at center, #d774ff 0%, #6a14b3 100%); }
-  .pixel-frame-inner.fb-green  { background: radial-gradient(ellipse at center, #b9f068 0%, #2d6e0a 100%); }
-  .pixel-frame-inner.fb-red    { background: radial-gradient(ellipse at center, #ff8a6a 0%, #8c1308 100%); }
-  .pixel-frame-inner.fb-gold   { background: radial-gradient(ellipse at center, #fff5b5 0%, #b07b00 100%); }
-  .pixel-frame-inner.fb-dark   { background: radial-gradient(ellipse at center, #3a3a3a 0%, #0a0a0a 100%); }
-
-  /* Brainrot image inside the frame */
-  .brainrot-img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
-    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.4));
-  }
-  .brainrot-missing {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    font-family: 'Press Start 2P', monospace;
-    color: rgba(0,0,0,0.4);
-    font-size: 14px;
-    text-align: center;
-    padding: 24px;
-    line-height: 1.6;
-  }
-  .brainrot-missing .glyph {
-    font-size: 80px;
-    color: rgba(0,0,0,0.3);
-    line-height: 1;
-  }
-
-  /* Arrow column */
-  .arrow {
-    align-self: center;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    filter: drop-shadow(0 6px 0 #0c0a08) drop-shadow(0 10px 16px rgba(0,0,0,0.5));
-  }
-  .arrow svg { width: 100%; height: 100%; }
-
-  /* Bottom subtitle inside right side */
-  /* (handled by SVG renderer) */
-
-  /* watermark */
-  .watermark {
-    position: absolute;
-    bottom: 6px; right: 12px;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 9px;
-    color: rgba(0,0,0,0.4);
-    letter-spacing: 1px;
-    z-index: 4;
-  }
-
-  /* toast */
-  .toast {
-    position: fixed;
-    bottom: 24px; left: 50%;
-    transform: translateX(-50%);
-    background: var(--cyan);
-    color: #002b35;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-family: 'Lilita One', sans-serif;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-    opacity: 0;
-    transition: opacity 0.2s, transform 0.2s;
-    z-index: 200;
-    pointer-events: none;
-  }
-  .toast.show { opacity: 1; transform: translateX(-50%) translateY(-8px); }
-</style>
 </head>
 <body>
 <div class="page-col">
@@ -542,84 +91,122 @@
     <section class="side-edit">
       <header class="side-edit-head" style="color:#ffd83a">◀ OFFERING (LEFT)</header>
 
-      <div class="field">
-        <label>Count · Brainrot</label>
-        <div class="row">
-          <input id="f-lq" placeholder="2" inputmode="numeric" />
+      <div class="side-edit-sub">
+        <div class="side-edit-sub-head">BRAINROT</div>
+
+        <div class="field">
+          <label>Brainrot</label>
           <div class="ac-wrap" id="ac-left"></div>
         </div>
-      </div>
 
-      <div class="field">
-        <label>Name color</label>
-        <select id="f-lc">
-          <option value="gold">Gold</option>
-          <option value="white">White</option>
-          <option value="rainbow">Rainbow</option>
-          <option value="cyan">Cyan</option>
-          <option value="green">Green</option>
-          <option value="pink">Pink</option>
-        </select>
-      </div>
+        <div class="field">
+          <label>Mutation</label>
+          <div id="f-lm"></div>
+        </div>
 
-      <div class="field">
-        <label>Frame background</label>
-        <div class="swatches" data-bg-target="lbg">
-          <div class="swatch" data-bg="orange" style="background: radial-gradient(ellipse at center, #ffe089, #ff9b1c);"></div>
-          <div class="swatch" data-bg="blue" style="background: radial-gradient(ellipse at center, #7adfff, #1f6db8);"></div>
-          <div class="swatch" data-bg="pink" style="background: radial-gradient(ellipse at center, #ffaadc, #c91a82);"></div>
-          <div class="swatch" data-bg="purple" style="background: radial-gradient(ellipse at center, #d774ff, #6a14b3);"></div>
-          <div class="swatch" data-bg="green" style="background: radial-gradient(ellipse at center, #b9f068, #2d6e0a);"></div>
-          <div class="swatch" data-bg="red" style="background: radial-gradient(ellipse at center, #ff8a6a, #8c1308);"></div>
-          <div class="swatch" data-bg="dark" style="background: radial-gradient(ellipse at center, #555, #111);"></div>
+        <div class="field">
+          <label>Traits</label>
+          <div class="trait-picker-row">
+            <div id="f-lt-pick"></div>
+            <button class="btn-add-trait" id="btn-lt-add" type="button">+</button>
+          </div>
+          <div class="trait-list" id="tl-left"></div>
         </div>
       </div>
 
-      <div class="field">
-        <label>Subtitle (optional)</label>
-        <textarea id="f-ls" rows="2" placeholder="e.g. {gold:OG} ONLY"></textarea>
+      <div class="side-edit-sub">
+        <div class="side-edit-sub-head">VISUAL</div>
+
+        <div class="field">
+          <label>Name color</label>
+          <select id="f-lc">
+            <option value="gold">Gold</option>
+            <option value="white">White</option>
+            <option value="rainbow">Rainbow</option>
+            <option value="cyan">Cyan</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Frame background</label>
+          <div class="swatches" data-bg-target="lbg">
+            <div class="swatch" data-bg="orange" style="background: radial-gradient(ellipse at center, #ffe089, #ff9b1c);"></div>
+            <div class="swatch" data-bg="blue" style="background: radial-gradient(ellipse at center, #7adfff, #1f6db8);"></div>
+            <div class="swatch" data-bg="pink" style="background: radial-gradient(ellipse at center, #ffaadc, #c91a82);"></div>
+            <div class="swatch" data-bg="purple" style="background: radial-gradient(ellipse at center, #d774ff, #6a14b3);"></div>
+            <div class="swatch" data-bg="green" style="background: radial-gradient(ellipse at center, #b9f068, #2d6e0a);"></div>
+            <div class="swatch" data-bg="red" style="background: radial-gradient(ellipse at center, #ff8a6a, #8c1308);"></div>
+            <div class="swatch" data-bg="dark" style="background: radial-gradient(ellipse at center, #555, #111);"></div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Subtitle (optional)</label>
+          <textarea id="f-ls" rows="2" placeholder="e.g. {gold:OG} ONLY"></textarea>
+        </div>
       </div>
     </section>
 
     <section class="side-edit">
       <header class="side-edit-head" style="color:#ff5aca">WANTING (RIGHT) ▶</header>
 
-      <div class="field">
-        <label>Count · Brainrot</label>
-        <div class="row">
-          <input id="f-rq" placeholder="1" inputmode="numeric" />
+      <div class="side-edit-sub">
+        <div class="side-edit-sub-head">BRAINROT</div>
+
+        <div class="field">
+          <label>Brainrot</label>
           <div class="ac-wrap" id="ac-right"></div>
         </div>
-      </div>
 
-      <div class="field">
-        <label>Name color</label>
-        <select id="f-rc">
-          <option value="rainbow">Rainbow</option>
-          <option value="gold">Gold</option>
-          <option value="white">White</option>
-          <option value="cyan">Cyan</option>
-          <option value="green">Green</option>
-          <option value="pink">Pink</option>
-        </select>
-      </div>
+        <div class="field">
+          <label>Mutation</label>
+          <div id="f-rm"></div>
+        </div>
 
-      <div class="field">
-        <label>Frame background</label>
-        <div class="swatches" data-bg-target="rbg">
-          <div class="swatch" data-bg="orange" style="background: radial-gradient(ellipse at center, #ffe089, #ff9b1c);"></div>
-          <div class="swatch" data-bg="blue" style="background: radial-gradient(ellipse at center, #7adfff, #1f6db8);"></div>
-          <div class="swatch" data-bg="pink" style="background: radial-gradient(ellipse at center, #ffaadc, #c91a82);"></div>
-          <div class="swatch" data-bg="purple" style="background: radial-gradient(ellipse at center, #d774ff, #6a14b3);"></div>
-          <div class="swatch" data-bg="green" style="background: radial-gradient(ellipse at center, #b9f068, #2d6e0a);"></div>
-          <div class="swatch" data-bg="red" style="background: radial-gradient(ellipse at center, #ff8a6a, #8c1308);"></div>
-          <div class="swatch" data-bg="dark" style="background: radial-gradient(ellipse at center, #555, #111);"></div>
+        <div class="field">
+          <label>Traits</label>
+          <div class="trait-picker-row">
+            <div id="f-rt-pick"></div>
+            <button class="btn-add-trait" id="btn-rt-add" type="button">+</button>
+          </div>
+          <div class="trait-list" id="tl-right"></div>
         </div>
       </div>
 
-      <div class="field">
-        <label>Subtitle (optional)</label>
-        <textarea id="f-rs" rows="3" placeholder="DONT NEED BASE,&#10;{gold:GOLD} AND {cyan:DIAMOND}"></textarea>
+      <div class="side-edit-sub">
+        <div class="side-edit-sub-head">VISUAL</div>
+
+        <div class="field">
+          <label>Name color</label>
+          <select id="f-rc">
+            <option value="rainbow">Rainbow</option>
+            <option value="gold">Gold</option>
+            <option value="white">White</option>
+            <option value="cyan">Cyan</option>
+            <option value="green">Green</option>
+            <option value="pink">Pink</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Frame background</label>
+          <div class="swatches" data-bg-target="rbg">
+            <div class="swatch" data-bg="orange" style="background: radial-gradient(ellipse at center, #ffe089, #ff9b1c);"></div>
+            <div class="swatch" data-bg="blue" style="background: radial-gradient(ellipse at center, #7adfff, #1f6db8);"></div>
+            <div class="swatch" data-bg="pink" style="background: radial-gradient(ellipse at center, #ffaadc, #c91a82);"></div>
+            <div class="swatch" data-bg="purple" style="background: radial-gradient(ellipse at center, #d774ff, #6a14b3);"></div>
+            <div class="swatch" data-bg="green" style="background: radial-gradient(ellipse at center, #b9f068, #2d6e0a);"></div>
+            <div class="swatch" data-bg="red" style="background: radial-gradient(ellipse at center, #ff8a6a, #8c1308);"></div>
+            <div class="swatch" data-bg="dark" style="background: radial-gradient(ellipse at center, #555, #111);"></div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Subtitle (optional)</label>
+          <textarea id="f-rs" rows="3" placeholder="DONT NEED BASE,&#10;{gold:GOLD} AND {cyan:DIAMOND}"></textarea>
+        </div>
       </div>
     </section>
 
@@ -628,668 +215,7 @@
 
 <div class="toast" id="toast">Copied!</div>
 
-<script>
-/* ──────────────────────────────────────────────────────────────────
-   URL params ↔ state
-   ────────────────────────────────────────────────────────────────── */
-const DEFAULTS = {
-  action: 'IM TRADING',
-  lq: '1',
-  ln: 'noobini-pizzanini', // brainrot id from manifest
-  lc: 'gold',
-  lbg: 'green',         // left frame inner bg
-  ls: '',               // left subtitle (optional)
-  rq: '1',
-  rn: 'Strawberryelephant-1', // brainrot id
-  rc: 'rainbow',
-  rbg: 'orange',        // right frame inner bg
-  rs: 'DONT NEED BASE,\n{gold:GOLD} AND {cyan:DIAMOND}',
-  bg: 'purple',         // outer card bg
-  // legacy / optional image URL override
-  li: '',
-  ri: '',
-};
-
-function readParams() {
-  const u = new URL(location.href);
-  const out = {};
-  for (const k of Object.keys(DEFAULTS)) {
-    out[k] = u.searchParams.get(k) ?? DEFAULTS[k];
-  }
-  return out;
-}
-
-function writeParams(state, replace = true) {
-  const u = new URL(location.href);
-  for (const k of Object.keys(DEFAULTS)) {
-    if (state[k] === DEFAULTS[k] || state[k] === '' || state[k] == null) {
-      u.searchParams.delete(k);
-    } else {
-      u.searchParams.set(k, state[k]);
-    }
-  }
-  const fn = replace ? 'replaceState' : 'pushState';
-  history[fn](null, '', u.toString());
-  updateShareBox();
-  updateOG();
-}
-
-function shareUrl() {
-  const u = new URL(location.href);
-  for (const k of Object.keys(DEFAULTS)) {
-    const v = state[k];
-    if (v !== '' && v != null) {
-      u.searchParams.set(k, v);
-    } else {
-      u.searchParams.delete(k);
-    }
-  }
-  return u.toString();
-}
-
-/* ──────────────────────────────────────────────────────────────────
-   SVG text builders — paint-order: stroke gives clean outline + gradient
-   ────────────────────────────────────────────────────────────────── */
-const GRADIENT_DEFS = `
-  <defs>
-    <linearGradient id="g-gold" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fff5b5"/>
-      <stop offset="45%" stop-color="#ffd83a"/>
-      <stop offset="100%" stop-color="#ff9d12"/>
-    </linearGradient>
-    <linearGradient id="g-white" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e6e6e6"/>
-    </linearGradient>
-    <linearGradient id="g-cyan" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#c8faff"/>
-      <stop offset="45%" stop-color="#5ee8ff"/>
-      <stop offset="100%" stop-color="#0a9dc4"/>
-    </linearGradient>
-    <linearGradient id="g-green" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#c8ff8e"/>
-      <stop offset="45%" stop-color="#5fd61a"/>
-      <stop offset="100%" stop-color="#1e8a00"/>
-    </linearGradient>
-    <linearGradient id="g-pink" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ffd1e8"/>
-      <stop offset="45%" stop-color="#ff5aca"/>
-      <stop offset="100%" stop-color="#c01680"/>
-    </linearGradient>
-    <linearGradient id="g-rainbow" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#ff3a3a"/>
-      <stop offset="14%"  stop-color="#ff8a1e"/>
-      <stop offset="28%"  stop-color="#ffd83a"/>
-      <stop offset="42%"  stop-color="#5fd61a"/>
-      <stop offset="56%"  stop-color="#5ee8ff"/>
-      <stop offset="70%"  stop-color="#5b6aff"/>
-      <stop offset="84%"  stop-color="#b14aff"/>
-      <stop offset="100%" stop-color="#ff5aca"/>
-    </linearGradient>
-  </defs>
-`;
-
-function escSvg(t) {
-  return (t || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-}
-
-function fillFor(color) {
-  if (!color || color === 'white') return 'url(#g-white)';
-  return `url(#g-${color})`;
-}
-
-// Measure text natural width using canvas
-function measureText(text, fontSize, fontFamily = "'Lilita One', sans-serif") {
-  const c = measureText._c || (measureText._c = document.createElement('canvas'));
-  const ctx = c.getContext('2d');
-  ctx.font = `${fontSize}px ${fontFamily}`;
-  return ctx.measureText(text || '').width;
-}
-
-/**
- * One-line outlined text rendered as inline SVG.
- *  - viewBox is 1200×fontSize*1.2, text-anchor=middle at x=600
- *  - if natural text > maxWidth, compress via textLength to fit
- *  - paint-order=stroke draws stroke under fill so gradient stays clean
- */
-function svgText(text, opts = {}) {
-  const {
-    fontSize = 140,
-    strokeWidth = 14,
-    color = 'white',
-    maxWidth = 1140,
-    fill = false,  // when true, always stretch to maxWidth (used for title)
-  } = opts;
-  const safe = escSvg(text);
-  const vbH = Math.round(fontSize * 1.25);
-  const baseY = Math.round(vbH * 0.82);
-  const natural = measureText(text, fontSize);
-  const shouldStretch = fill || natural > maxWidth;
-  const lengthAttr = shouldStretch
-    ? `textLength="${maxWidth}" lengthAdjust="spacingAndGlyphs"`
-    : '';
-  return `
-    <div class="o-text-wrap">
-      <svg viewBox="0 0 1200 ${vbH}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
-        ${GRADIENT_DEFS}
-        <text x="600" y="${baseY}" text-anchor="middle"
-          ${lengthAttr}
-          font-family="'Lilita One', sans-serif" font-size="${fontSize}"
-          font-weight="400" letter-spacing="2"
-          paint-order="stroke" stroke="#0c0a08" stroke-width="${strokeWidth}"
-          stroke-linejoin="round" stroke-linecap="round"
-          fill="${fillFor(color)}">${safe}</text>
-      </svg>
-    </div>
-  `;
-}
-
-/**
- * Subtitle with colored words via tspans. Parses {color:WORD} markup.
- */
-function svgSubtitle(raw, fontSize = 60, strokeWidth = 7) {
-  if (!raw) return '';
-  // Split into tokens: plain text and {color:WORD}
-  const parts = [];
-  let i = 0;
-  const re = /\{(gold|cyan|green|pink|rainbow|white):([^}]+)\}/gi;
-  let m;
-  while ((m = re.exec(raw)) !== null) {
-    if (m.index > i) parts.push({ text: raw.slice(i, m.index), color: 'white' });
-    parts.push({ text: m[2], color: m[1].toLowerCase() });
-    i = m.index + m[0].length;
-  }
-  if (i < raw.length) parts.push({ text: raw.slice(i), color: 'white' });
-
-  // Need to handle line breaks too — split on \n
-  const lines = [[]];
-  for (const p of parts) {
-    const segs = p.text.split('\n');
-    segs.forEach((seg, idx) => {
-      if (idx > 0) lines.push([]);
-      if (seg) lines[lines.length - 1].push({ text: seg, color: p.color });
-    });
-  }
-
-  const vbH = Math.round(fontSize * 1.25 * lines.length + 8);
-  const lineH = Math.round(fontSize * 1.2);
-  const baseY0 = Math.round(fontSize * 0.95);
-
-  const lineSvg = (line, lineIdx) => {
-    const tspans = line.map(seg => {
-      const safe = escSvg(seg.text);
-      return `<tspan fill="${fillFor(seg.color)}">${safe}</tspan>`;
-    }).join('');
-    return `
-      <text x="600" y="${baseY0 + lineIdx * lineH}" text-anchor="middle"
-        font-family="'Lilita One', sans-serif" font-size="${fontSize}"
-        letter-spacing="1"
-        paint-order="stroke" stroke="#0c0a08" stroke-width="${strokeWidth}"
-        stroke-linejoin="round" stroke-linecap="round"
-        fill="url(#g-white)">${tspans}</text>
-    `;
-  };
-
-  return `
-    <div class="o-text-wrap" style="height: auto;">
-      <svg viewBox="0 0 1200 ${vbH}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-        ${GRADIENT_DEFS}
-        ${lines.map(lineSvg).join('')}
-      </svg>
-    </div>
-  `;
-}
-
-/* ──────────────────────────────────────────────────────────────────
-   Card render
-   ────────────────────────────────────────────────────────────────── */
-
-/* ──────────────────────────────────────────────────────────────────
-   Brainrot catalog
-   ────────────────────────────────────────────────────────────────── */
-const BRAINROT_BASE = 'static/images/brainrot/';
-let BRAINROTS = [];      // [{id, name, image}]
-let BR_BY_ID = {};
-
-async function loadBrainrots() {
-  try {
-    const r = await fetch(BRAINROT_BASE + 'brainrots.json');
-    const j = await r.json();
-    BRAINROTS = (j.brainrots || []).map(b => ({
-      id: b.id,
-      name: b.name || b.id,
-      image: BRAINROT_BASE + b.id + '.' + (b.ext || 'webp'),
-    })).sort((a, b) => a.name.localeCompare(b.name));
-    BR_BY_ID = Object.fromEntries(BRAINROTS.map(b => [b.id, b]));
-  } catch (e) {
-    console.warn('Could not load brainrots.json', e);
-    BRAINROTS = [];
-  }
-}
-
-function brainrotById(id) {
-  if (BR_BY_ID[id]) return BR_BY_ID[id];
-  // Fall back: synthesize from raw id so user-typed values still render
-  const pretty = String(id || '').replace(/[-_]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2').trim();
-  return { id, name: pretty || 'UNKNOWN', image: id ? BRAINROT_BASE + id + '.webp' : '' };
-}
-
-/* ──────────────────────────────────────────────────────────────────
-   Autocomplete component
-   Mounts into a container; reports selection via onSelect(id).
-   ────────────────────────────────────────────────────────────────── */
-function mountAutocomplete(container, initialId, onSelect) {
-  const wrap = container;
-  wrap.innerHTML = `
-    <input class="ac-input" type="text" autocomplete="off" placeholder="Search brainrot…" />
-    <div class="ac-list" role="listbox"></div>
-  `;
-  const input = wrap.querySelector('.ac-input');
-  const list = wrap.querySelector('.ac-list');
-  let activeIdx = -1;
-  let filtered = [];
-
-  function setValueFromId(id) {
-    const b = brainrotById(id);
-    input.value = b.name;
-  }
-  setValueFromId(initialId);
-
-  function render(q) {
-    const qLow = q.toLowerCase().trim();
-    filtered = BRAINROTS.filter(b => !qLow || b.name.toLowerCase().includes(qLow));
-    activeIdx = -1;
-    list.innerHTML = filtered.slice(0, 100).map((b, i) => `
-      <div class="ac-item" data-idx="${i}" data-id="${b.id}">
-        <div class="thumb" style="background-image:url('${b.image}')">${b.image ? '' : '?'}</div>
-        <div class="name">${b.name}</div>
-      </div>
-    `).join('') || `<div class="ac-item" style="color:#8a7060">No match — type to add custom name</div>`;
-  }
-
-  function open() {
-    render(input.value);
-    list.classList.add('open');
-  }
-  function close() { list.classList.remove('open'); }
-  function commit(id, displayName) {
-    const b = brainrotById(id);
-    input.value = displayName || b.name;
-    onSelect(id);
-    close();
-  }
-
-  input.addEventListener('focus', open);
-  input.addEventListener('input', () => {
-    render(input.value);
-    list.classList.add('open');
-    // Also report typed value as the id (so user can use custom names)
-    onSelect(input.value);
-  });
-  input.addEventListener('keydown', e => {
-    const items = list.querySelectorAll('.ac-item[data-id]');
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      activeIdx = Math.min(activeIdx + 1, items.length - 1);
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      activeIdx = Math.max(activeIdx - 1, 0);
-    } else if (e.key === 'Enter') {
-      if (activeIdx >= 0 && items[activeIdx]) {
-        e.preventDefault();
-        commit(items[activeIdx].dataset.id);
-      } else {
-        close();
-      }
-    } else if (e.key === 'Escape') {
-      close();
-    }
-    items.forEach((el, i) => el.classList.toggle('active', i === activeIdx));
-  });
-  list.addEventListener('mousedown', e => {
-    const item = e.target.closest('.ac-item[data-id]');
-    if (item) {
-      e.preventDefault();
-      commit(item.dataset.id);
-    }
-  });
-  document.addEventListener('click', e => {
-    if (!wrap.contains(e.target)) close();
-  });
-
-  return {
-    setId(id) { setValueFromId(id); },
-  };
-}
-
-let leftAC = null, rightAC = null;
-
-function render(state) {
-  const wrap = document.getElementById('card-wrap');
-  const esc = (t) => (t || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-
-  const lBrainrot = brainrotById(state.ln);
-  const rBrainrot = brainrotById(state.rn);
-  const qtyPrefix = (q) => (q && String(q).trim() && String(q).trim() !== '1') ? String(q).trim() + ' ' : '';
-  const leftLabel  = (qtyPrefix(state.lq) + (lBrainrot.name || '')).trim().toUpperCase();
-  const rightLabel = (qtyPrefix(state.rq) + (rBrainrot.name || '')).trim().toUpperCase();
-
-  // Title fills width for big banner feel
-  const titleFs = state.action && state.action.length > 14 ? 150 : 180;
-  const titleSw = Math.round(titleFs / 9);
-
-  // Side labels: pick a font size that comfortably fits 1140-wide viewBox
-  const sideFs = (txt) => {
-    if (!txt) return 110;
-    if (txt.length <= 9)  return 140;
-    if (txt.length <= 14) return 115;
-    if (txt.length <= 22) return 92;
-    if (txt.length <= 32) return 74;
-    return 60;
-  };
-  const sideSw = (fs) => Math.round(fs / 10);
-
-  const lFs = sideFs(leftLabel);
-  const rFs = 115;
-
-  // Subtitle font: smaller, accommodate wrapping by splitting on commas
-  const subFs = 56;
-
-  const frameImg = (b, alt) => {
-    if (!b.image) return `<div class="brainrot-missing"><div class="glyph">?</div><div>NO BRAINROT</div></div>`;
-    // onerror swap to placeholder
-    const safeName = esc(b.name);
-    return `
-      <img class="brainrot-img" src="${esc(b.image)}" alt="${safeName}"
-        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-      <div class="brainrot-missing" style="display:none">
-        <div class="glyph">?</div>
-        <div>${safeName.toUpperCase()}<br/>IMAGE MISSING</div>
-      </div>
-    `;
-  };
-
-  wrap.innerHTML = `
-    <div class="card-frame bg-${state.bg}" id="card">
-      <div class="rays"></div>
-
-      <div class="card-title">
-        ${svgText(state.action || '', { fontSize: titleFs, strokeWidth: titleSw, color: 'white', fill: true })}
-      </div>
-
-      <div class="grid">
-        <div class="side">
-          <div class="side-label">
-            ${svgText(leftLabel, { fontSize: lFs, strokeWidth: sideSw(lFs), color: state.lc })}
-          </div>
-          <div class="pixel-frame">
-            <div class="pixel-frame-inner fb-${state.lbg}">
-              ${frameImg(lBrainrot, lBrainrot.name)}
-            </div>
-          </div>
-          ${state.ls ? `<div class="subtitle">${svgSubtitle(state.ls, subFs, 6)}</div>` : ''}
-        </div>
-
-        <div class="arrow">
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
-            <g fill="#3acb3a" stroke="#0c0a08" stroke-width="5" stroke-linejoin="miter">
-              <polygon points="4,36 56,36 56,16 96,50 56,84 56,64 4,64" />
-            </g>
-          </svg>
-        </div>
-
-        <div class="side">
-          <div class="side-label">
-            ${svgText(rightLabel, { fontSize: rFs, strokeWidth: sideSw(rFs), color: state.rc })}
-          </div>
-          <div class="pixel-frame">
-            <div class="pixel-frame-inner fb-${state.rbg}">
-              ${frameImg(rBrainrot, rBrainrot.name)}
-            </div>
-          </div>
-          ${state.rs ? `<div class="subtitle">${svgSubtitle(state.rs, subFs, 6)}</div>` : ''}
-        </div>
-      </div>
-
-      <div class="watermark">brainrot.girard-davila.net</div>
-    </div>
-  `;
-  fitCard();
-}
-
-/* scale 1200×800 card to fit available space */
-function fitCard() {
-  const card = document.getElementById('card');
-  const wrap = document.getElementById('card-wrap');
-  if (!card || !wrap) return;
-  const header = document.querySelector('.editor-header');
-  const headerH = header ? header.getBoundingClientRect().height : 120;
-  const sw = Math.min(850, window.innerWidth) - 48;
-  const sh = Math.max(window.innerHeight - headerH - 60, 400);
-  const cw = 1200, ch = 800;
-  const scale = Math.min(sw / cw, sh / ch, 1);
-  card.style.transform = `scale(${scale})`;
-  wrap.style.width  = (cw * scale) + 'px';
-  wrap.style.height = (ch * scale) + 'px';
-}
-window.addEventListener('resize', fitCard);
-requestAnimationFrame(() => requestAnimationFrame(fitCard));
-
-/* ──────────────────────────────────────────────────────────────────
-   Editor wiring
-   ────────────────────────────────────────────────────────────────── */
-let state = readParams();
-
-function syncEditorFromState() {
-  document.getElementById('f-lq').value = state.lq;
-  document.getElementById('f-rq').value = state.rq;
-  document.getElementById('f-ls').value = state.ls;
-  document.getElementById('f-rs').value = state.rs;
-  document.getElementById('f-lc').value = state.lc;
-  document.getElementById('f-rc').value = state.rc;
-  if (leftAC)  leftAC.setId(state.ln);
-  if (rightAC) rightAC.setId(state.rn);
-  // Sync all swatch groups
-  document.querySelectorAll('.swatches[data-bg-target]').forEach(group => {
-    const key = group.dataset.bgTarget;
-    group.querySelectorAll('.swatch').forEach(el => {
-      el.classList.toggle('active', el.dataset.bg === state[key]);
-    });
-  });
-}
-
-function bindEditor() {
-  const bind = (id, key) => {
-    document.getElementById(id).addEventListener('input', e => {
-      state[key] = e.target.value;
-      writeParams(state);
-      render(state);
-    });
-  };
-  bind('f-lq', 'lq');
-  bind('f-rq', 'rq');
-  bind('f-ls', 'ls');
-  bind('f-rs', 'rs');
-  bind('f-lc', 'lc');
-  bind('f-rc', 'rc');
-
-  // All swatch groups (bg, lbg, rbg)
-  document.querySelectorAll('.swatches[data-bg-target]').forEach(group => {
-    const key = group.dataset.bgTarget;
-    group.querySelectorAll('.swatch').forEach(el => {
-      el.addEventListener('click', () => {
-        state[key] = el.dataset.bg;
-        writeParams(state);
-        render(state);
-        syncEditorFromState();
-      });
-    });
-  });
-
-  // Autocompletes
-  leftAC = mountAutocomplete(document.getElementById('ac-left'), state.ln, (id) => {
-    state.ln = id;
-    writeParams(state);
-    render(state);
-  });
-  rightAC = mountAutocomplete(document.getElementById('ac-right'), state.rn, (id) => {
-    state.rn = id;
-    writeParams(state);
-    render(state);
-  });
-
-  document.getElementById('btn-share').addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(shareUrl());
-      toast('Link copied!');
-    } catch {
-      toast('Copy failed — select URL manually');
-    }
-  });
-
-  document.getElementById('btn-download').addEventListener('click', downloadPNG);
-}
-
-function updateShareBox() {
-  document.getElementById('share-url').textContent = shareUrl();
-}
-
-function updateOG() {
-  const lName = brainrotById(state.ln).name;
-  const rName = brainrotById(state.rn).name;
-  const subClean = (s) => (s || '').replace(/\{[^:]+:([^}]+)\}/g, '$1').replace(/\n/g, ' ').trim();
-
-  // Title: optimal 50-60 chars
-  let title = `${state.action}: ${state.lq}x ${lName} → ${state.rq}x ${rName}`;
-  if (title.length > 60) title = title.slice(0, 57) + '…';
-
-  // Description: optimal 110-160 chars
-  const rsClean = subClean(state.rs);
-  const base = `Offering ${state.lq}x ${lName} in exchange for ${state.rq}x ${rName}.`;
-  const suffix = ' Trade on Brainrot Trading Cards!';
-  const mid = rsClean ? ` ${rsClean}.` : '';
-  let desc = base + mid + suffix;
-  if (desc.length > 160) {
-    const budget = 160 - base.length - suffix.length - 2;
-    desc = base + (budget > 0 ? ' ' + rsClean.slice(0, budget) + '…' : '') + suffix;
-  }
-
-  const img = `https://brainrot-og.girard-davila.net/render?u=${encodeURIComponent(location.href)}`;
-  const alt = `${state.lq}x ${lName} for ${state.rq}x ${rName} trading card`;
-  document.title = `${state.action} — ${state.lq}x ${lName} → ${state.rq}x ${rName}`;
-  const set = (id, val) => { const el = document.getElementById(id); if (el) el.setAttribute('content', val); };
-  set('og-url',       location.href);
-  set('og-title',     title);
-  set('og-desc',      desc);
-  set('og-image',     img);
-  set('og-image-alt', alt);
-  set('tw-title',     title);
-  set('tw-desc',      desc);
-  set('tw-image',     img);
-  set('tw-image-alt', alt);
-}
-
-function toast(msg) {
-  const el = document.getElementById('toast');
-  el.textContent = msg;
-  el.classList.add('show');
-  clearTimeout(el._t);
-  el._t = setTimeout(() => el.classList.remove('show'), 1800);
-}
-
-/* ──────────────────────────────────────────────────────────────────
-   Font embedding — dom-to-image cannot read cross-origin <link>
-   stylesheets, so Google Fonts fall back to system fonts in the PNG.
-   We fetch the font CSS + binaries and inject them as an inline
-   <style> with base64 data URIs that dom-to-image CAN access.
-   ────────────────────────────────────────────────────────────────── */
-function _arrayBufToBase64(buf) {
-  let bin = '';
-  const bytes = new Uint8Array(buf);
-  for (let i = 0; i < bytes.length; i += 8192) {
-    bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
-  }
-  return btoa(bin);
-}
-
-async function embedGoogleFonts() {
-  if (document.getElementById('embedded-fonts')) return;
-  try {
-    const cssUrl = 'https://fonts.googleapis.com/css2?family=Lilita+One&family=Press+Start+2P&family=Bungee&display=swap';
-    const cssResp = await fetch(cssUrl);
-    let css = await cssResp.text();
-
-    // Replace each font URL with a base64 data URI
-    const matches = [...css.matchAll(/url\((https:\/\/fonts\.gstatic\.com[^)]+)\)/g)];
-    await Promise.all(matches.map(async ([, url]) => {
-      const fontResp = await fetch(url);
-      const buf = await fontResp.arrayBuffer();
-      const b64 = _arrayBufToBase64(buf);
-      const fmt = url.includes('.woff2') ? 'woff2' : 'woff';
-      css = css.replaceAll(url, `data:font/${fmt};base64,${b64}`);
-    }));
-
-    const style = document.createElement('style');
-    style.id = 'embedded-fonts';
-    style.textContent = css;
-    document.head.appendChild(style);
-  } catch (e) {
-    console.warn('Font embedding failed — PNG may use fallback fonts', e);
-  }
-}
-
-/* ──────────────────────────────────────────────────────────────────
-   Download as PNG (client-side rasterization)
-   ────────────────────────────────────────────────────────────────── */
-async function downloadPNG() {
-  toast('Rendering…');
-  const card = document.getElementById('card');
-
-  const prevTransform = card.style.transform;
-  card.style.transform = 'none';
-
-  try {
-    if (!window.domtoimage) {
-      await new Promise((res, rej) => {
-        const s = document.createElement('script');
-        s.src = 'https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js';
-        s.onload = res; s.onerror = rej;
-        document.head.appendChild(s);
-      });
-    }
-
-    // Embed fonts as base64 so dom-to-image can access @font-face rules
-    await embedGoogleFonts();
-
-    const blob = await domtoimage.toBlob(card, { width: 1200, height: 800 });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `trade-${(state.ln||'card').toLowerCase()}-${Date.now()}.png`;
-    a.click();
-    toast('Downloaded!');
-  } catch (e) {
-    console.error(e);
-    toast('Download failed');
-  } finally {
-    card.style.transform = prevTransform;
-  }
-}
-
-/* ──────────────────────────────────────────────────────────────────
-   Init
-   ────────────────────────────────────────────────────────────────── */
-(async () => {
-  await loadBrainrots();
-  bindEditor();
-  syncEditorFromState();
-  render(state);
-  updateShareBox();
-  updateOG();
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(fitCard);
-  }
-})();
-</script>
+<script src="static/js/app.js"></script>
 
 </div><!-- /.page-col -->
 </body>
