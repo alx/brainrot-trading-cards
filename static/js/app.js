@@ -634,9 +634,9 @@ function initCustomSelects() {
   }));
 
   leftMutCS  = mountCustomSelect('f-lm', mutItems, state.lm || 'default',
-    v => { state.lm = v; writeParams(state); render(state); });
+    v => { state.lm = v; writeParams(state); render(state); typeof gtag === 'function' && gtag('event', 'select_mutation', { side: 'left', mutation_id: v }); });
   rightMutCS = mountCustomSelect('f-rm', mutItems, state.rm || 'default',
-    v => { state.rm = v; writeParams(state); render(state); });
+    v => { state.rm = v; writeParams(state); render(state); typeof gtag === 'function' && gtag('event', 'select_mutation', { side: 'right', mutation_id: v }); });
   leftTraitCS  = mountCustomSelect('f-lt-pick', traitItems, traitItems[0]?.value, () => {});
   rightTraitCS = mountCustomSelect('f-rt-pick', traitItems, traitItems[0]?.value, () => {});
 }
@@ -684,6 +684,11 @@ function bindEditor() {
   bind('f-rs', 'rs');
   bind('f-lc', 'lc');
   bind('f-rc', 'rc');
+  ['f-lc', 'f-rc'].forEach(id => {
+    document.getElementById(id).addEventListener('change', e => {
+      typeof gtag === 'function' && gtag('event', 'select_name_color', { side: id === 'f-lc' ? 'left' : 'right', color: e.target.value });
+    });
+  });
 
   // Mutation selects are handled via mountCustomSelect onChange callbacks
 
@@ -700,6 +705,7 @@ function bindEditor() {
       writeParams(state);
       render(state);
       renderTraitChips(side === 'l' ? 'left' : 'right', state[stateKey]);
+      typeof gtag === 'function' && gtag('event', 'add_trait', { side: side === 'l' ? 'left' : 'right', trait_id: traitId });
     });
   };
   addTrait('l', leftTraitCS,  'lt');
@@ -716,6 +722,7 @@ function bindEditor() {
       writeParams(state);
       render(state);
       renderTraitChips(chipSide, state[stateKey]);
+      typeof gtag === 'function' && gtag('event', 'remove_trait', { side: chipSide, trait_id: traitId });
     });
   };
   removeTrait('tl-left',  'lt', 'left');
@@ -730,6 +737,7 @@ function bindEditor() {
         writeParams(state);
         render(state);
         syncEditorFromState();
+        typeof gtag === 'function' && gtag('event', 'select_color', { color_target: key, color: el.dataset.bg });
       });
     });
   });
@@ -739,11 +747,15 @@ function bindEditor() {
     state.ln = id;
     writeParams(state);
     render(state);
+    const b = id && BRAINROTS.find(br => br.id === id);
+    if (b) typeof gtag === 'function' && gtag('event', 'select_brainrot', { side: 'left', brainrot_id: id, brainrot_name: b.name });
   });
   rightAC = mountAutocomplete(document.getElementById('ac-right'), state.rn, (id) => {
     state.rn = id;
     writeParams(state);
     render(state);
+    const b = id && BRAINROTS.find(br => br.id === id);
+    if (b) typeof gtag === 'function' && gtag('event', 'select_brainrot', { side: 'right', brainrot_id: id, brainrot_name: b.name });
   });
 
   // VISUAL section toggle
@@ -757,12 +769,17 @@ function bindEditor() {
     try {
       await navigator.clipboard.writeText(shareUrl());
       toast('Link copied!');
+      typeof gtag === 'function' && gtag('event', 'share_card', { success: true });
     } catch {
       toast('Copy failed — select URL manually');
+      typeof gtag === 'function' && gtag('event', 'share_card', { success: false });
     }
   });
 
-  document.getElementById('btn-download').addEventListener('click', downloadPNG);
+  document.getElementById('btn-download').addEventListener('click', () => {
+    typeof gtag === 'function' && gtag('event', 'download_card');
+    downloadPNG();
+  });
 }
 
 function updateShareBox() {

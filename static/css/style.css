@@ -549,7 +549,7 @@
   /* watermark */
   .watermark {
     position: absolute;
-    bottom: 6px; right: 12px;
+    top: 6px; right: 12px;
     font-family: 'Press Start 2P', monospace;
     font-size: 9px;
     color: rgba(0,0,0,0.4);
