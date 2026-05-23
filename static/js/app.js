@@ -14,7 +14,7 @@ const DEFAULTS = {
   rt: '',                  // right traits, comma-separated
   rc: 'rainbow',
   rbg: 'orange',           // right frame inner bg
-  rs: 'DONT NEED BASE,\n{gold:GOLD} AND {cyan:DIAMOND}',
+  rs: '',
   bg: 'purple',            // outer card bg
   li: '',
   ri: '',
@@ -42,6 +42,7 @@ function writeParams(state, replace = true) {
   history[fn](null, '', u.toString());
   updateShareBox();
   updateOG();
+  updateFairExchange();
 }
 
 function shareUrl() {
@@ -269,7 +270,7 @@ function brainrotById(id) {
   if (BR_BY_ID[id]) return BR_BY_ID[id];
   // Fall back: synthesize from raw id so user-typed values still render
   const pretty = String(id || '').replace(/[-_]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2').trim();
-  return { id, name: pretty || 'UNKNOWN', image: id ? BRAINROT_BASE + id + '.webp' : '' };
+  return { id, name: pretty || 'No Brainrot', image: id ? BRAINROT_BASE + id + '.webp' : '' };
 }
 
 /* ──────────────────────────────────────────────────────────────────
@@ -279,17 +280,31 @@ function brainrotById(id) {
 function mountAutocomplete(container, initialId, onSelect) {
   const wrap = container;
   wrap.innerHTML = `
-    <input class="ac-input" type="text" autocomplete="off" placeholder="Search brainrot…" />
+    <div class="ac-input-row">
+      <img class="ac-brainrot-icon" src="" alt="" />
+      <input class="ac-input" type="text" autocomplete="off" placeholder="Search brainrot…" />
+      <button class="ac-clear-btn" type="button" title="Clear">×</button>
+    </div>
     <div class="ac-list" role="listbox"></div>
   `;
   const input = wrap.querySelector('.ac-input');
   const list = wrap.querySelector('.ac-list');
+  const icon = wrap.querySelector('.ac-brainrot-icon');
+  const clearBtn = wrap.querySelector('.ac-clear-btn');
   let activeIdx = -1;
   let filtered = [];
 
   function setValueFromId(id) {
     const b = brainrotById(id);
     input.value = b.name;
+    if (b.image && id) {
+      icon.src = b.image;
+      icon.classList.add('visible');
+    } else {
+      icon.src = '';
+      icon.classList.remove('visible');
+    }
+    clearBtn.classList.toggle('visible', !!input.value);
   }
   setValueFromId(initialId);
 
@@ -313,6 +328,14 @@ function mountAutocomplete(container, initialId, onSelect) {
   function commit(id, displayName) {
     const b = brainrotById(id);
     input.value = displayName || b.name;
+    if (b.image && id) {
+      icon.src = b.image;
+      icon.classList.add('visible');
+    } else {
+      icon.src = '';
+      icon.classList.remove('visible');
+    }
+    clearBtn.classList.toggle('visible', !!input.value);
     onSelect(id);
     close();
   }
@@ -321,8 +344,19 @@ function mountAutocomplete(container, initialId, onSelect) {
   input.addEventListener('input', () => {
     render(input.value);
     list.classList.add('open');
+    icon.src = '';
+    icon.classList.remove('visible');
+    clearBtn.classList.toggle('visible', !!input.value);
     // Also report typed value as the id (so user can use custom names)
     onSelect(input.value);
+  });
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    icon.src = '';
+    icon.classList.remove('visible');
+    clearBtn.classList.remove('visible');
+    onSelect('');
+    input.focus();
   });
   input.addEventListener('keydown', e => {
     const items = list.querySelectorAll('.ac-item[data-id]');
@@ -364,8 +398,8 @@ const EGG_TRAITS = new Set(['orange_egg', 'green_egg', 'blue_egg', 'pink_egg']);
 
 let leftAC = null, rightAC = null;
 
-function formatTotalIncome(base, mutId, traitIds) {
-  if (!base || base <= 0) return null;
+function calcTotalIncomeRaw(base, mutId, traitIds) {
+  if (!base || base <= 0) return 0;
   const mut = MUTATIONS_BY_ID[mutId] || MUTATIONS_BY_ID['default'] || { multiplier: 1 };
   const traitObjs = traitIds.map(id => TRAITS_BY_ID[id]).filter(Boolean);
   const normalTraits = traitObjs.filter(t => t.id !== 'sleepy');
@@ -374,7 +408,12 @@ function formatTotalIncome(base, mutId, traitIds) {
   const traitMultSum = normalTraits.reduce((s, t) => s + t.multiplier, 0);
   let total = (base * mut.multiplier) + (numTraits > 0 ? base * (traitMultSum - numTraits) : 0);
   if (hasSleepy) total *= 0.5;
-  return formatIncome(Math.round(total));
+  return Math.round(total);
+}
+
+function formatTotalIncome(base, mutId, traitIds) {
+  const n = calcTotalIncomeRaw(base, mutId, traitIds);
+  return n > 0 ? formatIncome(n) : null;
 }
 
 function render(state) {
@@ -405,7 +444,8 @@ function render(state) {
   const sideSw = (fs) => Math.round(fs / 10);
 
   const lFs = sideFs(leftLabel);
-  const rFs = 115;
+  const rFs = sideFs(rightLabel);
+  const sharedLabelFs = Math.min(lFs, rFs);
   const subFs = 56;
 
   const frameImg = (b, mutId, traitIds) => {
@@ -450,7 +490,7 @@ function render(state) {
       <div class="grid">
         <div class="side">
           <div class="side-label">
-            ${svgText(leftLabel, { fontSize: lFs, strokeWidth: sideSw(lFs), color: state.lc })}
+            ${svgText(leftLabel, { fontSize: sharedLabelFs, strokeWidth: sideSw(sharedLabelFs), color: state.lc })}
           </div>
           <div class="pixel-frame">
             <div class="pixel-frame-inner fb-${state.lbg}">
@@ -470,7 +510,7 @@ function render(state) {
 
         <div class="side">
           <div class="side-label">
-            ${svgText(rightLabel, { fontSize: rFs, strokeWidth: sideSw(rFs), color: state.rc })}
+            ${svgText(rightLabel, { fontSize: sharedLabelFs, strokeWidth: sideSw(sharedLabelFs), color: state.rc })}
           </div>
           <div class="pixel-frame">
             <div class="pixel-frame-inner fb-${state.rbg}">
@@ -706,6 +746,13 @@ function bindEditor() {
     render(state);
   });
 
+  // VISUAL section toggle
+  document.querySelectorAll('.side-edit-sub-head').forEach(head => {
+    head.addEventListener('click', () => {
+      head.closest('.side-edit-sub').classList.toggle('collapsed');
+    });
+  });
+
   document.getElementById('btn-share').addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(shareUrl());
@@ -720,6 +767,24 @@ function bindEditor() {
 
 function updateShareBox() {
   document.getElementById('share-url').textContent = shareUrl();
+}
+
+function updateFairExchange() {
+  const el = document.getElementById('fair-exchange');
+  if (!el) return;
+  const lB = brainrotById(state.ln);
+  const rB = brainrotById(state.rn);
+  const lInc = calcTotalIncomeRaw(lB.income, state.lm, (state.lt || '').split(',').filter(Boolean));
+  const rInc = calcTotalIncomeRaw(rB.income, state.rm, (state.rt || '').split(',').filter(Boolean));
+
+  document.getElementById('fe-left-val').textContent  = lInc > 0 ? formatIncome(lInc) : '—';
+  document.getElementById('fe-right-val').textContent = rInc > 0 ? formatIncome(rInc) : '—';
+
+  const maxInc = Math.max(lInc, rInc);
+  if (maxInc === 0) { el.dataset.balance = ''; return; }
+
+  const absRatio = Math.abs(lInc - rInc) / maxInc;
+  el.dataset.balance = absRatio < 0.1 ? 'fair' : absRatio < 0.4 ? 'orange' : 'unfair';
 }
 
 function updateOG() {
@@ -854,6 +919,7 @@ async function downloadPNG() {
   render(state);
   updateShareBox();
   updateOG();
+  updateFairExchange();
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(fitCard);
   }

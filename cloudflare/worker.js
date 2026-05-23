@@ -8,8 +8,7 @@ const DEFAULTS = {
   ln: 'Noobini_Pizzanini', lm: 'default', lt: '', lq: '1',
   lc: 'gold', lbg: 'green', ls: '',
   rn: 'Strawberry_Elephant', rm: 'default', rt: '', rq: '1',
-  rc: 'rainbow', rbg: 'orange',
-  rs: 'DONT NEED BASE,\n{gold:GOLD} AND {cyan:DIAMOND}',
+  rc: 'rainbow', rbg: 'orange', rs: '',
   bg: 'purple', li: '', ri: '',
 };
 
@@ -29,7 +28,7 @@ function setMeta(html, id, value) {
 // Mirrors brainrotById() fallback in app.js
 function nameFromId(catalog, id) {
   if (catalog[id]) return catalog[id].name;
-  return String(id || '').replace(/[-_]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2').trim() || 'UNKNOWN';
+  return String(id || '').replace(/[-_]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2').trim() || 'No Brainrot';
 }
 
 // Mirrors formatIncome() in app.js
@@ -42,9 +41,9 @@ function formatIncome(n) {
   return `$${n}/s`;
 }
 
-// Mirrors formatTotalIncome() in app.js
-function calcIncome(base, mutId, traitIds, mutations, traits) {
-  if (!base || base <= 0) return null;
+// Returns raw numeric income (mirrors calcTotalIncomeRaw() in app.js)
+function calcIncomeRaw(base, mutId, traitIds, mutations, traits) {
+  if (!base || base <= 0) return 0;
   const mut = mutations[mutId] || mutations['default'] || { multiplier: 1 };
   const traitObjs = traitIds.map(id => traits[id]).filter(Boolean);
   const normalTraits = traitObjs.filter(t => t.id !== 'sleepy');
@@ -52,7 +51,22 @@ function calcIncome(base, mutId, traitIds, mutations, traits) {
   const traitMultSum = normalTraits.reduce((s, t) => s + t.multiplier, 0);
   let total = base * mut.multiplier + (normalTraits.length > 0 ? base * (traitMultSum - normalTraits.length) : 0);
   if (hasSleepy) total *= 0.5;
-  return formatIncome(Math.round(total));
+  return Math.round(total);
+}
+
+// Mirrors formatTotalIncome() in app.js
+function calcIncome(base, mutId, traitIds, mutations, traits) {
+  const n = calcIncomeRaw(base, mutId, traitIds, mutations, traits);
+  return n > 0 ? formatIncome(n) : null;
+}
+
+function fairExchangeNote(lRaw, rRaw) {
+  const maxInc = Math.max(lRaw, rRaw);
+  if (maxInc === 0) return null;
+  const absRatio = Math.abs(lRaw - rRaw) / maxInc;
+  if (absRatio < 0.1) return 'Fair trade';
+  const dir = lRaw > rRaw ? 'Offering more' : 'Asking more than offered';
+  return absRatio < 0.4 ? dir : `Unbalanced — ${dir.toLowerCase()}`;
 }
 
 // Prefixes mutation name when not default
@@ -118,21 +132,25 @@ export default {
     const lTraits = p.lt ? p.lt.split(',').map(s => s.trim()).filter(Boolean) : [];
     const rTraits = p.rt ? p.rt.split(',').map(s => s.trim()).filter(Boolean) : [];
 
-    const lIncome = calcIncome(catalog[p.ln]?.income, p.lm, lTraits, mutations, traits);
-    const rIncome = calcIncome(catalog[p.rn]?.income, p.rm, rTraits, mutations, traits);
+    const lIncomeRaw = calcIncomeRaw(catalog[p.ln]?.income, p.lm, lTraits, mutations, traits);
+    const rIncomeRaw = calcIncomeRaw(catalog[p.rn]?.income, p.rm, rTraits, mutations, traits);
+    const lIncome = lIncomeRaw > 0 ? formatIncome(lIncomeRaw) : null;
+    const rIncome = rIncomeRaw > 0 ? formatIncome(rIncomeRaw) : null;
 
     const lPart = lIncome ? `${p.lq}x ${lLabel} (${lIncome})` : `${p.lq}x ${lLabel}`;
     const rPart = rIncome ? `${p.rq}x ${rLabel} (${rIncome})` : `${p.rq}x ${rLabel}`;
+
+    const fairNote = fairExchangeNote(lIncomeRaw, rIncomeRaw);
 
     // Mirrors title logic in updateOG()
     let title = `${p.action}: ${lLabel} → ${rLabel}`;
     if (title.length > 60) title = title.slice(0, 57) + '…';
 
-    // Mirrors description logic in updateOG(), extended with income
+    // Mirrors description logic in updateOG(), extended with income and fairness
     const subClean = s => (s || '').replace(/\{[^:]+:([^}]+)\}/g, '$1').replace(/\n/g, ' ').trim();
     const rsClean = subClean(p.rs);
     const base    = `Offering ${lPart} in exchange for ${rPart}.`;
-    const suffix  = ' Trade on Brainrot Trading Cards!';
+    const suffix  = (fairNote ? ` ${fairNote}!` : '') + ' Trade on Brainrot Trading Cards!';
     const mid     = rsClean ? ` ${rsClean}.` : '';
     let desc = base + mid + suffix;
     if (desc.length > 160) {
