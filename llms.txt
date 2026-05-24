@@ -1,0 +1,132 @@
+# Brainrot Trading Card
+
+> A two-sided Roblox brainrot trading card builder — 400+ characters, 14 mutations, 60+ stackable traits. All state lives in the URL; no backend required.
+
+Live site: https://brainrot.girard-davila.net/
+Source: https://github.com/alx/brainrot-trading-cards
+
+## URL API
+
+Construct any card by appending query parameters to the live site URL. The page is fully static — all rendering happens client-side from the URL alone.
+
+### Parameters
+
+| Param | Description | Default |
+|-------|-------------|---------|
+| `action` | Banner text | `IM TRADING` |
+| `ln` / `rn` | Left / right brainrot ID | `Noobini_Pizzanini` / `Strawberry_Elephant` |
+| `lm` / `rm` | Left / right mutation ID | `default` |
+| `lt` / `rt` | Left / right traits (comma-separated IDs) | _(none)_ |
+| `lc` / `rc` | Left / right name color | `gold` / `rainbow` |
+| `lbg` / `rbg` | Left / right frame background color | `green` / `orange` |
+| `ls` / `rs` | Left / right subtitle text (optional) | _(none)_ |
+| `bg` | Outer card background color | `purple` |
+
+### Valid values
+
+- **Name colors:** `gold` `white` `rainbow` `cyan` `green` `pink`
+- **Frame / card backgrounds:** `orange` `blue` `pink` `purple` `green` `red`
+- **Frame-only extra:** `dark`
+
+### Example URL
+
+```
+https://brainrot.girard-davila.net/?action=IM%20TRADING
+  &ln=Noobini_Pizzanini&lm=rainbow&lt=strawberry,meowl&lc=gold&lbg=blue
+  &rn=Strawberry_Elephant&rm=cyber&rt=skibidi&rc=pink&rbg=orange&bg=purple
+```
+
+All IDs come from the data files below — use them verbatim.
+
+## Income formula
+
+```
+normal_traits = [t for t in traits if t["id"] != "sleepy"]
+has_sleepy    = any(t["id"] == "sleepy" for t in traits)
+trait_sum     = sum(t["multiplier"] for t in normal_traits)
+
+income = base_income * mutation["multiplier"]
+if normal_traits:
+    income += base_income * (trait_sum - len(normal_traits))
+if has_sleepy:
+    income *= 0.5
+income = round(income)
+```
+
+Two cards are a "fair trade" when `abs(left_income - right_income) / max(left_income, right_income) < 0.10`.
+
+## Screenshot a card to PNG
+
+### Option A — live site (no local setup)
+
+```python
+# requires: pip install playwright && playwright install chromium
+from playwright.sync_api import sync_playwright
+
+url = (
+    "https://brainrot.girard-davila.net/"
+    "?action=IM%20TRADING"
+    "&ln=Noobini_Pizzanini&lm=rainbow&lt=strawberry,meowl&lc=gold&lbg=blue"
+    "&rn=Strawberry_Elephant&rm=cyber&rt=skibidi&rc=pink&rbg=orange&bg=purple"
+)
+
+with sync_playwright() as pw:
+    browser = pw.chromium.launch(headless=True)
+    page = browser.new_page(viewport={"width": 1400, "height": 900})
+    page.goto(url)
+    page.wait_for_load_state("networkidle", timeout=15_000)
+    page.wait_for_selector(".card-frame", timeout=10_000)
+    page.locator(".card-frame").screenshot(path="trade.png")
+    browser.close()
+```
+
+### Option B — local server (offline, faster)
+
+```bash
+git clone https://github.com/alx/brainrot-trading-cards
+cd brainrot-trading-cards
+python -m http.server 8765 &   # must serve from repo root so static/ resolves
+```
+
+Then use the same Playwright snippet with `http://localhost:8765/` as the base URL.
+
+`scripts/generate_trades.py` is the reference implementation of this pattern: it starts the local server in a background thread, picks random fair card pairs, and screenshots each `.card-frame`. Read it for a complete working example.
+
+## Data files
+
+All IDs used in URLs come from these JSON files (served at the paths below on the live site, or found in the repo under `static/`):
+
+### `static/brainrots.json`
+```
+{ "brainrots": [{ "id": "Noobini_Pizzanini", "name": "Noobini Pizzanini", "income": 500000 }, ...] }
+```
+400+ entries. Use `id` as `ln`/`rn`. Only brainrots with `income > 0` and a matching `static/images/brainrot/<id>.webp` are rendered with an image.
+
+### `static/mutations.json`
+```
+[{ "id": "rainbow", "name": "Rainbow", "multiplier": 10 }, ...]
+```
+14 mutations. Use `id` as `lm`/`rm`.
+
+| id | multiplier |
+|----|-----------|
+| `default` | 1 |
+| `gold` | 1.25 |
+| `diamond` | 1.5 |
+| `bloodrot` | 2 |
+| `candy` | 4 |
+| `lava` | 6 |
+| `galaxy` | 7 |
+| `yin_yang` | 7.5 |
+| `radioactive` | 8.5 |
+| `cursed` | 9 |
+| `rainbow` | 10 |
+| `divine` | 10 |
+| `cyber` | 11 |
+| `disco_mut` | 11 |
+
+### `static/traits.json`
+```
+[{ "id": "strawberry", "name": "Strawberry", "multiplier": 9 }, ...]
+```
+60+ traits. Use `id` as comma-separated values in `lt`/`rt`. Top traits by multiplier: `strawberry` (9), `meowl` (8), `john_pork` / `rainbow_balloon` / `pink_egg` (7.5), `skibidi` (7). The `sleepy` trait halves total income.
